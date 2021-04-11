@@ -34,12 +34,16 @@ const [nameBase, nameHash] = serverFile.split('.');
 // Determine routes to pre-render from src/pages
 const routesToPrerender = recursiveReaddir(toAbsolute('src/pages'))
   .map((file) => {
-    const [_, name] = file.replace(/\.vue$/, '').toLowerCase().split('pages').slice(1);
+    const [_, name] = file
+      .replace(/\.vue$/, '')
+      .replace(/\\/g, '/')
+      .toLowerCase()
+      .split('pages/');
     
     if (name === "[...all]") {
       return "404";
     }
-    return name.replace(/\\/g, '/').replace('/index', '');
+    return name.replace('/index', '');
   });
 
 ;(async () => {
