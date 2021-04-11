@@ -10,7 +10,7 @@
   "scripts": {
     "start": "",
     "dev": "vite",
-    "build": "npm run static:server && npm run static:staticfolder && node prerender",
+    "build": "npm run build:server && npm run build:staticfolder && node prerender",
     "build:server": "vite build --ssr src/entry-server.ts --outDir dist/server",
     "build:staticfolder": "npx rimraf dist/static && npx mkdirp dist/static",
     "serve": "vite preview",
