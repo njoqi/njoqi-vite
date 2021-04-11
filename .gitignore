@@ -1,0 +1,11 @@
+*.log
+*.tmp
+.cache
+.DS_Store
+.localhistory/
+.ntvs_analysis.dat
+node_modules
+.env
+.env.*
+dist
+*.local
