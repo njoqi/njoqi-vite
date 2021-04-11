@@ -35,6 +35,8 @@ const [nameBase, nameHash] = serverFile.split('.');
 const routesToPrerender = recursiveReaddir(toAbsolute('src/pages'))
   .map((file) => {
     const [_, name] = file.replace(/\.vue$/, '').toLowerCase().split('pages\\');
+    console.log(`File: ${file}`);
+    console.log(`Filename: ${name}`);
     if (name === "[...all]") {
       return "404";
     }
