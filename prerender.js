@@ -1,5 +1,5 @@
 // Pre-render the app into static HTML.
-// run `npm generate` and then `dist/static` can be served as a static site.
+// run `npm generate` and then `dist` can be served as a static site.
 
 const fs = require('fs');
 const path = require('path');
@@ -7,11 +7,11 @@ const mkdirp = require('mkdirp');
 
 const toAbsolute = (p) => path.resolve(__dirname, p);
 
-const builtFiles = fs.readdirSync(toAbsolute('dist/server'));
+const builtFiles = fs.readdirSync(toAbsolute('dist'));
 const template = fs.readFileSync(toAbsolute('index.html'), 'utf-8');
 const [serverFile] = builtFiles.filter(file => file.indexOf('.js') >= 0);
 
-const { render } = require(`./dist/server/${serverFile}`);
+const { render } = require(`./dist/${serverFile}`);
 
 const recursiveReaddir = function(dirPath, arrayOfFiles) {
   files = fs.readdirSync(dirPath);
@@ -57,35 +57,26 @@ const routesToPrerender = recursiveReaddir(toAbsolute('src/pages'))
       writeUrl = url + "/index";
     }
 
+    // Remove HMR module and insert pre-rendered HTML
     const html = template
       .replace(`<!--stylesheet-->`, `<link rel="stylesheet" href="/assets/style.${nameHash}.css">`)
       .replace(`<script type="module" src="/src/entry-client.ts"></script>`, '')
       .replace(`<!--app-html-->`, appHtml);
 
-    const filePath = `dist/static/${writeUrl}.html`;
+    const filePath = `dist/${writeUrl}.html`;
 
     mkdirp(path.dirname(filePath)).then(made => {
       fs.writeFileSync(toAbsolute(filePath), html);
     });
   }
 
-  // Move assets files from /server to /static
-  builtFiles.forEach((file) => {
-    fs.renameSync(toAbsolute(`dist/server/${file}`), toAbsolute(`dist/static/${file}`), err => {
-      if (err) throw err;
-    });
-  });
-
-  
-  fs.rename(toAbsolute(`dist/static/${nameBase}.${nameHash}.css`), toAbsolute(`dist/static/assets/style.${nameHash}.css`), err => {
+  // Move and rename the CSS bundle
+  fs.rename(toAbsolute(`dist/${nameBase}.${nameHash}.css`), toAbsolute(`dist/assets/style.${nameHash}.css`), err => {
     if (err) throw err;
   });
-  
 
-  // Remove leftover files and server folder
-
-  fs.unlinkSync(toAbsolute(`dist/static/${serverFile}`));
-  fs.unlinkSync(toAbsolute(`dist/static/style.scss`));
-  fs.rmdirSync(toAbsolute(`dist/server`));
+  // Remove leftover build files
+  fs.unlinkSync(toAbsolute(`dist/${serverFile}`));
+  fs.unlinkSync(toAbsolute(`dist/style.scss`));
 
 })();

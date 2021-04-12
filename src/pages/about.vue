@@ -57,7 +57,7 @@
       njoqi
     </h3>
     <p class="article__text">
-      <mark>njoqi</mark> is the place you're currently visiting. It was inspired by projects like <a href="https://wiki.xxiivv.com/" title="Truly impressive">Neauoire's XXIIVV</a>, and aims to become:
+      <mark>njoqi</mark> is the place you're currently visiting. It was inspired by projects like <a href="https://wiki.xxiivv.com/">Neauoire's XXIIVV</a>, and aims to become:
     </p>
     <ul class="article-list">
       <li class="list-item">
@@ -74,13 +74,13 @@
       </li>
     </ul>
     <p class="article__text">
-      The website is for now featuring two main areas. The <a href="/">Projects list</a> holds information about my creative works and their status. The <a href="/codex/">Codex</a> acts as a kind of reference guide, with interesting resources I can go back to and share around.
+      The website is for now featuring two main areas. The <a href="/">Projects list</a> holds information about some of my creative works and their status. The <a href="/codex/">Codex</a> acts as a kind of reference guide, with interesting resources I can go back to and share around.
     </p>
     <p class="article__text">
-      It is completely hand-coded in HTML and CSS, in the simplest way. I am planning on using a static site generator to optimise my workflow, and allow for easy large-scale changes while compacting content in a standardized way.
+      It uses <a href="https://vitejs.dev/">Vite</a> as development and build tool and <a href="https://v3.vuejs.org/">Vue 3</a> as front-end framework. Pre-rendering allows flexibility and componentization while generating a lightweight static website.
     </p>
     <p class="article__text">
-      It should stay accessible, have a minimal footprint, and a simple and user-friendly development stack. And it's hosted on <a href="https://neocities.org/" title="An awesome free hosting platform">Neocities</a>, because what a nice platform to support!
+      It should stay accessible, have a small footprint, and a simple and user-friendly development stack. It is currently hosted on <a href="https://render.com/">Render</a>, which updates it seamlessly through Github pushes.
     </p>
   </article>
 

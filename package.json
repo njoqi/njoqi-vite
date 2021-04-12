@@ -1,6 +1,6 @@
 {
   "name": "njoqi-vite",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Personal portfolio and wiki",
   "engines": {
     "node": "14.16.x"
@@ -10,9 +10,9 @@
   "scripts": {
     "start": "",
     "dev": "vite",
-    "build": "npm run build:server && npm run build:staticfolder && node prerender",
-    "build:server": "vite build --ssr src/entry-server.ts --outDir dist/server",
-    "build:staticfolder": "npx rimraf dist/static && npx mkdirp dist/static",
+    "build": "npm run build:clear && npm run build:server && node prerender",
+    "build:clear": "npx rimraf dist",
+    "build:server": "vite build --ssr src/entry-server.ts --outDir dist",
     "serve": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
