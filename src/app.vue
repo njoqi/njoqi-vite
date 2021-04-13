@@ -27,35 +27,19 @@ export default defineComponent({
 
 <style lang="scss">
   @import "src/components/_variables.scss";
-  /*@font-face {
-      font-family: 'Archia Web';
-      src: url('/assets/fonts/archia-bold-webfont.eot');
-      src: url('/assets/fonts/archia-bold-webfont.eot?#iefix') format('embedded-opentype'),
-          url('/assets/fonts/archia-bold-webfont.woff2') format('woff2'),
-          url('/assets/fonts/archia-bold-webfont.woff') format('woff'),
-          url('/assets/fonts/archia-bold-webfont.ttf') format('truetype');
-      font-weight: bold;
-      font-style: normal;
-  }*/
 
   @font-face {
       font-family: 'Archia Web';
-      src: url('/assets/fonts/archia-regular-webfont.eot');
-      src: url('/assets/fonts/archia-regular-webfont.eot?#iefix') format('embedded-opentype'),
-          url('/assets/fonts/archia-regular-webfont.woff2') format('woff2'),
-          url('/assets/fonts/archia-regular-webfont.woff') format('woff'),
-          url('/assets/fonts/archia-regular-webfont.ttf') format('truetype');
+      src: url('/assets/fonts/archia-regular-web.woff2') format('woff2'),
+          url('/assets/fonts/archia-regular-web.woff') format('woff');
       font-weight: normal;
       font-style: normal;
   }
 
   @font-face {
       font-family: 'Augillion Web';
-      src: url('/assets/fonts/augillion-regular-webfont.eot');
-      src: url('/assets/fonts/augillion-regular-webfont.eot?#iefix') format('embedded-opentype'),
-          url('/assets/fonts/augillion-regular-webfont.woff2') format('woff2'),
-          url('/assets/fonts/augillion-regular-webfont.woff') format('woff'),
-          url('/assets/fonts/augillion-regular-webfont.ttf') format('truetype');
+      src: url('/assets/fonts/augillion-regular-web.woff2') format('woff2'),
+          url('/assets/fonts/augillion-regular-web.woff') format('woff');
       font-weight: normal;
       font-style: normal;
   }
