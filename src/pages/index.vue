@@ -98,7 +98,7 @@ export default defineComponent({
     const todayTimestamp = Date.now();
     const today = new Date(todayTimestamp);
     const [todayMonth, todayDate, todayYear] = today.toLocaleDateString("en-US").split("/");
-    const lastUpdated = ref(todayDate + " " + months[todayMonth] + " " + todayYear);
+    const lastUpdated = ref(todayDate + " " + months[todayMonth - 1] + " " + todayYear);
 
     useHead({
       title: "Home",

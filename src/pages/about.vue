@@ -26,13 +26,13 @@
         🎨 visual arts (esp. photography)
       </li>
       <li class="list-item">
-        🌤 nature, fauna & flora
+        🌤 nature, fauna &amp; flora
       </li>
       <li class="list-item">
-        🌿 sustainable living & ecology
+        🌿 sustainable living &amp; ecology
       </li>
       <li class="list-item">
-        🎵 electronic music & field recordings
+        🎵 electronic music &amp; field recordings
       </li>
       <li class="list-item">
         🍜 food (mostly vegan!)
