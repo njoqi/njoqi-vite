@@ -34,16 +34,18 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+  @import "src/components/_variables.scss";
+  
   .base-nav {
-    padding: 0 1rem;
+    padding: 0 1em;
     max-width: 56rem;
-    margin: 1rem auto 2rem;
+    margin: 1em auto 2em;
   }
 
   @media all and (min-width: 42rem) {
     .base-nav {
-      padding: 0 2rem;
+      padding: 0 2em;
     }
   }
 
@@ -51,9 +53,13 @@ export default defineComponent({
     display: flex;
     float: right;
     text-transform: lowercase;
-    font-size: 1rem;
+    font-size: $font-size-0;
     justify-content: space-around;
     margin: 0;
+
+    @media screen and (min-width: $content-max-width) {
+      font-size: $font-size-0-max;
+    }
   }
 
   .base-nav:after {
@@ -71,8 +77,8 @@ export default defineComponent({
     display: inline-block;
     text-decoration: none;
     letter-spacing: 0.05em;
-    padding: 0.5rem 1rem 0.2em;
-    border-bottom: 0.3em solid transparent;
+    padding: 0.5em 1em 0.3em;
+    border-bottom: 0.2em solid transparent;
   }
 
   .base-nav-link:hover,

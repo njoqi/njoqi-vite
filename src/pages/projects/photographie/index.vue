@@ -1,26 +1,26 @@
 <template>
   <article class="full-width">
     <header class="article-header">
-      <nav class="article__text">
+      <nav class="text">
         <router-link to="/">
             Projects index
         </router-link>
       </nav>
-      <h2 class="section__title">
+      <h2>
         Photographie
       </h2>
-      <p class="section__text">
+      <p class="text">
         Selected photographic works.
       </p>
     </header>
     <section>
-      <h3 class="article__title">
+      <h3 >
         Themes
       </h3>
-      <p class="article__text">
+      <p class="text">
         Note: the photos are listed in reverse chronological order (most recent first).
       </p>
-      <ul class="article-list">
+      <ul class="list">
         <li class="list-item">
           <router-link to="/projects/photographie/humans">Humans</router-link>
         </li>
@@ -39,28 +39,40 @@
       </ul>
     </section>
     <section>
-      <h3 class="section__title">
+      <h3 >
           Some personal favorites
       </h3>
-      <ul>
-        <p class="article__text">
-          <img src="/assets/images/projects/photographie/presences/16.jpg" height="920" width="1600">
-        </p>
-        <p class="article__text">
-          <img src="/assets/images/projects/photographie/presences/14.jpg" loading="lazy" height="920" width="1600">
-        </p>
-        <p class="article__text">
-          <img src="/assets/images/projects/photographie/presences/08.jpg" loading="lazy" height="920" width="1600">
-        </p>
-        <p class="article__text">
-          <img src="/assets/images/projects/photographie/geometries/03.jpg" loading="lazy" height="933" width="1400">
-        </p>
-        <p class="article__text">
-          <img src="/assets/images/projects/photographie/humans/04.jpg" loading="lazy" height="1201" width="1600">
-        </p>
-        <p class="article__text">
-          <img src="/assets/images/projects/photographie/animals/05.jpg" loading="lazy" height="840" width="1600">
-        </p>
+      <ul class="list">
+        <li>
+          <p class="image photograph">
+            <img src="/assets/images/projects/photographie/presences/16.jpg" height="920" width="1600">
+          </p>
+        </li>
+        <li>
+          <p class="image photograph">
+            <img src="/assets/images/projects/photographie/presences/14.jpg" loading="lazy" height="920" width="1600">
+          </p>
+        </li>
+        <li>
+          <p class="image photograph">
+            <img src="/assets/images/projects/photographie/presences/08.jpg" loading="lazy" height="920" width="1600">
+          </p>
+        </li>
+        <li>
+          <p class="image photograph">
+            <img src="/assets/images/projects/photographie/geometries/03.jpg" loading="lazy" height="933" width="1400">
+          </p>
+        </li>
+        <li>
+          <p class="image photograph">
+            <img src="/assets/images/projects/photographie/humans/04.jpg" loading="lazy" height="1201" width="1600">
+          </p>
+        </li>
+        <li>
+          <p class="image photograph">
+            <img src="/assets/images/projects/photographie/animals/05.jpg" loading="lazy" height="840" width="1600">
+          </p>
+        </li>
       </ul>
     </section>
   </article>
@@ -85,5 +97,5 @@
   });
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 </style>

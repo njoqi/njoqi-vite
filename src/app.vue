@@ -26,7 +26,8 @@ export default defineComponent({
 
 
 <style lang="scss">
-  @font-face {
+  @import "src/components/_variables.scss";
+  /*@font-face {
       font-family: 'Archia Web';
       src: url('/assets/fonts/archia-bold-webfont.eot');
       src: url('/assets/fonts/archia-bold-webfont.eot?#iefix') format('embedded-opentype'),
@@ -35,7 +36,7 @@ export default defineComponent({
           url('/assets/fonts/archia-bold-webfont.ttf') format('truetype');
       font-weight: bold;
       font-style: normal;
-  }
+  }*/
 
   @font-face {
       font-family: 'Archia Web';
@@ -71,39 +72,55 @@ export default defineComponent({
     margin: 0;
     padding: 0;
     line-height: 1.5rem;
-    font-size: 1.125rem;
+    font-size: $font-size-0;
     letter-spacing: 0.065em;
     font-family: "Archia Web", sans-serif;
-    color: #261307;
-    background: #FFF2E5;
+    color: $color-text;
+    background: $color-light;
     letter-spacing: 0.0125em;
+
+    @media screen and (min-width: $content-max-width) {
+      font-size: $font-size-0-max;
+    }
   }
 
   a {
-    color: #D12D00;
+    color: $color-text-secondary;
   }
 
   h2 {
     line-height: 1.125;
     font-weight: 400;
-    font-size: 3.5rem;
-    margin: 0.2em 0;
+    font-size: $font-size-4;
+    margin: 0.4em 0;
     text-transform: lowercase;
     font-family: "Augillion Web", "Times New Roman", serif;
     letter-spacing: 0.008em;
+
+    @media screen and (min-width: $content-max-width) {
+      font-size: $font-size-4-max;
+    }
   }
 
   h3 {
     line-height: 1.125;
-    font-weight: 700;
-    font-size: 1.6rem;
+    font-weight: 400;
+    font-size: $font-size-3;
     margin: 2.5em 0 0.5em;
+
+    @media screen and (min-width: $content-max-width) {
+      font-size: $font-size-3-max;
+    }
   }
 
   h4 {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: $font-size-2;
     margin: 2em 0 0.5em;
+
+    @media screen and (min-width: $content-max-width) {
+      font-size: $font-size-2-max;
+    }
   }
 
   p,
@@ -123,12 +140,12 @@ export default defineComponent({
 
   em {
     font-style: normal;
-    border-top: 0.1em solid #FFD438;
-    border-bottom: 0.1em solid #FFD438;
+    border-top: 0.1em solid $color-secondary;
+    border-bottom: 0.1em solid $color-secondary;
   }
 
   a {
-    color: #D12D00;
+    color: $color-text-secondary;
   }
 
   a:not([href^='/']):not([href='']):not(.image-link):not(.mail-link):after {
@@ -141,7 +158,7 @@ export default defineComponent({
   }
 
   dt {
-    font-weight: 700;
+    font-weight: 400;
     float: left;
     padding-right: 0.5em;
   }
@@ -152,31 +169,43 @@ export default defineComponent({
 
   mark {
     letter-spacing: 0.1em;
-    font-size: 0.8em;
+    font-size: $font-size--1;
     vertical-align: middle;
-    background: #FFD438;
-    border: 0.25em solid #FFD438;
+    background: $color-secondary;
+    border: 0.25em solid $color-secondary;
     display: inline-block;
     margin-top: -0.1em;
     padding: 0 0.3em;
     line-height: 1.45em;
     border-radius: 0.3em;
+
+    @media screen and (min-width: $content-max-width) {
+      font-size: $font-size--1-max;
+    }
   }
 
   small {
-    font-size: 0.875rem;
+    font-size: $font-size--1;
+
+    @media screen and (min-width: $content-max-width) {
+      font-size: $font-size--1-max;
+    }
   }
 
   cite {
     font-style: normal;
     letter-spacing: 0.1em;
-    font-size: 0.8em;
+    font-size: $font-size--1;
     vertical-align: middle;
-    border: 0.25em solid #ebe0ce;
+    border: 0.25em solid $color-light-shadow;
     display: inline-block;
     margin-top: -0.1em;
     padding: 0 0.3em;
     line-height: 1.45em;
+
+    @media screen and (min-width: $content-max-width) {
+      font-size: $font-size--1-max;
+    }
   }
 
   img {
@@ -186,57 +215,74 @@ export default defineComponent({
 
   button {
     font-family: "Archia", Arial, sans-serif;
-    font-size: 0.875rem;
+    font-size: $font-size--1;
     padding: 0.4em 0.8em;
     background: transparent;
-    border: 0.2em solid #D12D00;
+    border: 0.2em solid $color-text-secondary;
     border-radius: 1em;
+
+    @media screen and (min-width: $content-max-width) {
+      font-size: $font-size--1-max;
+    }
   }
 
   .accent {
-    color: #D12D00;
+    color: $color-text-secondary;
   }
 
   .bright {
-    color: #FFD438;
+    color: $color-secondary;
   }
 
   .base-main {
-    color: #261307;
-    padding: 2rem 1.5rem 2rem;
+    color: $color-text;
+    padding: 2em 1.5em 2em;
     min-height: 50vh;
   }
 
   @media all and (min-width: 34rem) {
     .base-main {
-      padding: 2rem 2rem 4rem;
+      padding: 2em 2em 4em;
     }
   }
 
-  .full-width {
-    max-width: 56rem;
+  h2,
+  h3,
+  h4,
+  .article-header,
+  .text,
+  .list-item,
+  .descriptive-list {
+    max-width: $text-max-width;
     margin-left: auto;
     margin-right: auto;
   }  
 
+  .image {
+    text-align: center;
+    max-width: $content-max-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .article-header {
     padding-bottom: 0.5em;
+    margin-bottom: 3em;
+    border-bottom: 0.2em solid $color-text;
+  }
+
+  .photograph {
+    margin-top: 2em;
     margin-bottom: 2em;
-    border-bottom: 0.2em solid #261307;
   }
 
-  .article-photo {
-    margin-bottom: 1em;
-  }
-
-  .section__text,
-  .article__text,
-  .article__descriptive-list,
-  .article-list {
+  .text,
+  .descriptive-list,
+  .list {
     line-height: 1.8em;
   }
 
-  .article-list {
+  .list {
     list-style: none;
   }
 
@@ -245,17 +291,19 @@ export default defineComponent({
   }
 
   .list-item:before {
+    display: inline-block;
     content: "\2023";
-    opacity: 1;
-    padding: 0 0.25rem;
+    padding-left: 0.1em;
+    padding-right: 0.4em;
+    transition: transform 0.1s;
   }
 
   .list-item:hover:before,
   .list-item:active:before {
-    opacity: 0.4;
+    transform: scale(1.2) translateX(0.1em);
   }
 
-  .article-descriptive-list {
+  .descriptive-list {
     padding-left: 2em;
     padding-bottom: 1em;
     border-top: 0.1em solid;

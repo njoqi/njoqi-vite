@@ -1,6 +1,6 @@
 <template>
   <header class="full-width article-header">
-    <nav class="article__text">
+    <nav class="text">
       <router-link to="/codex">
         Codex index
       </router-link>
@@ -8,10 +8,10 @@
     <h2>
       Tea
     </h2>
-    <p class="section__text">
+    <p class="text">
       <mark>This page is being built.</mark>
     </p>
-    <p class="article__text">
+    <p class="text">
       Informations about tea, including a log of some teas I have tried, in order to refine my taste preferences while learning about them. For now, I seem to have a soft spot for unflavoured japanese tea.
     </p>
   </header>
@@ -20,7 +20,7 @@
     <h3>
       Resources about tea
     </h3>
-    <ul class="article-list">
+    <ul class="list">
       <li class="list-item">
         <a href="https://japaneseteasommelier.wordpress.com/2018/03/19/regional-banchas-as-ethnographic-documents/">Regional banchas as ethnographic documents</a>
       </li>
@@ -37,17 +37,17 @@
   </article>
 
   <section class="full-width">
-    <h3 class="section__title">
+    <h3 >
       Tea log
     </h3>
     <article>
       <h4>
         Sencha
       </h4>
-      <p class="article__text">
+      <p class="image">
         <img src="/assets/images/codex/tea/sencha.jpg" alt="Close-up of green, dry grass-like sencha leaves.">
       </p>
-      <dl class="article-descriptive-list">
+      <dl class="descriptive-list">
         <dt>Origin:</dt>
         <dd>Japan</dd>
 
@@ -65,10 +65,10 @@
       <h4>
         Kasakura
       </h4>
-      <p class="article__text">
+      <p class="image">
         <img src="/assets/images/codex/tea/kasakura.jpg" alt="Close-up of dark kasakura leaves.">
       </p>
-      <dl class="article-descriptive-list">
+      <dl class="descriptive-list">
         <dt>Origin:</dt>
         <dd>Japan (Shizuoka)</dd>
 
@@ -86,10 +86,10 @@
       <h4>
         Hōji Kukicha
       </h4>
-      <p class="article__text">
+      <p class="image">
         <img src="/assets/images/codex/tea/hojikukicha.jpg" alt="Close-up of brown hōjikukicha twigs.">
       </p>
-      <dl class="article-descriptive-list">
+      <dl class="descriptive-list">
         <dt>Origin:</dt>
         <dd>Japan</dd>
 
@@ -117,7 +117,7 @@
         meta: [
           {
             name: "description",
-            content: "C'est cool",
+            content: "Informations about tea, including a log of some teas I have tried, in order to refine my taste preferences while learning about them.",
           }
         ]
       });
@@ -125,5 +125,5 @@
   });
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 </style>

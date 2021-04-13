@@ -3,7 +3,7 @@
     <h2>
       Codex
     </h2>
-    <p class="article__text">
+    <p class="text">
       A repository of resources, logs and recommendations. I plan on keeping a printed archive of these at some point in the future, to avoid relying on their online availability.
     </p>
   </header>
@@ -12,10 +12,10 @@
     <h3>
       Knowledge
     </h3>
-    <p class="article__text">
+    <p class="text">
       Links and notes about subjects of interest. Note that these categories can overlap.
     </p>
-    <ul class="article-list">
+    <ul class="list">
       <li class="list-item">
         <router-link to="/codex/design">Design</router-link>
       </li>
@@ -29,7 +29,7 @@
     <h3>
       Personal logs
     </h3>
-    <ul class="article-list">
+    <ul class="list">
       <li class="list-item">
         <router-link to="/codex/webcomics">Webcomics</router-link>
       </li>
@@ -51,7 +51,7 @@
         meta: [
           {
             name: "description",
-            content: "C'est cool",
+            content: "A repository of resources, logs and recommendations.",
           }
         ]
       });
@@ -59,5 +59,5 @@
   });
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 </style>

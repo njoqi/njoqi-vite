@@ -1,25 +1,25 @@
 <template>
   <header class="full-width article-header">
-    <nav class="article__text">
+    <nav class="text">
       <router-link to="/codex">
         Codex index
       </router-link>
     </nav>
-    <h2 class="article__title">
+    <h2>
       Webcomics
     </h2>
-    <p class="section__text">
+    <p class="text">
       <mark>This page is being built.</mark>
     </p>
-    <p class="article__text">
+    <p class="text">
       Log of great webcomics I have read, or am reading.
     </p>
   </header>
   <article class="full-width">
-    <h3 class="article-title">
+    <h3 >
       <a href="https://hardlacquer.com/post/185301375229/post1x01">Hard Lacquer</a>
     </h3>
-    <dl class="article-descriptive-list">
+    <dl class="descriptive-list">
       <dt>Type:</dt>
       <dd>modern</dd>
 
@@ -28,10 +28,10 @@
     </dl>
   </article>
   <article class="full-width">
-    <h3 class="article-title">
+    <h3 >
       <a href="https://www.onasunbeam.com/">On a sunbeam</a>
     </h3>
-    <dl class="article-descriptive-list">
+    <dl class="descriptive-list">
       <dt>Type:</dt>
       <dd>sci-fi / fantasy</dd>
 
@@ -40,10 +40,10 @@
     </dl>
   </article>
   <article class="full-width">
-    <h3 class="article-title">
+    <h3 >
       <a href="http://sssscomic.com/">Stand Still. Stay Silent</a>
     </h3>
-    <dl class="article-descriptive-list">
+    <dl class="descriptive-list">
       <dt>Type:</dt>
       <dd>post-apo / fantasy</dd>
 
@@ -52,10 +52,10 @@
     </dl>
   </article>
   <article class="full-width">
-    <h3 class="article-title">
+    <h3 >
       <a href="https://www.webtoons.com/en/romance/lore-olympus/list?title_no=1320">Lore Olympus</a>
     </h3>
-    <dl class="article-descriptive-list">
+    <dl class="descriptive-list">
       <dt>Type:</dt>
       <dd>mythological / modern</dd>
 
@@ -64,10 +64,10 @@
     </dl>
   </article>
   <article class="full-width">
-    <h3 class="article-title">
+    <h3 >
       <a href="http://witchycomic.com/comic/page-1/">Witchy</a>
     </h3>
-    <dl class="article-descriptive-list">
+    <dl class="descriptive-list">
       <dt>Type:</dt>
       <dd>fantasy</dd>
 
@@ -88,7 +88,7 @@
         meta: [
           {
             name: "description",
-            content: "C'est cool",
+            content: "Log of great webcomics I have read, or am reading.",
           }
         ]
       });
@@ -96,5 +96,5 @@
   });
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 </style>

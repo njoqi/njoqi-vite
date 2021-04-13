@@ -1,21 +1,21 @@
 <template>
   <article class="full-width">
     <header class="article-header">
-      <h2 class="article__title">
+      <h2>
         Hello! Get comfy<span class="bright">.</span>
       </h2>
-      <p class="article__text">
+      <p class="text">
         Welcome to my humble place. I'm Flynn, a digital creative and front-end developer.
         Rest around the fire and take a look at things I want to record, display and share.
         Most are ongoing projects. Last updated: <mark>{{ lastUpdated }}</mark>
       </p>
     </header>
     <ul class="projects">
-      <li class="projects__item">
-        <router-link to="/projects/photographie" class="projects__item__title">
+      <li class="projects-item">
+        <router-link to="/projects/photographie" class="projects-item-title">
           Photographie
         </router-link>
-        <p class="projects__item__text">
+        <p class="text projects-item-text">
           <router-link to="/projects/photographie" class="image-link">
             <img 
               src="/assets/images/projects/project-photographie.jpg"
@@ -26,11 +26,11 @@
           Selected photographic works.
         </p>
     </li>
-    <li class="projects__item">
-      <router-link class="projects__item__title" to="/projects/carre-rose">
+    <li class="projects-item">
+      <router-link class="projects-item-title" to="/projects/carre-rose">
         Carré Rose
       </router-link>
-      <p class="projects__item__text">
+      <p class="text projects-item-text">
         <router-link to="/projects/carre-rose" class="image-link">
           <img 
             src="/assets/images/projects/project-carre-rose.jpg"
@@ -41,11 +41,11 @@
         Design for an adult movie label.
       </p>
     </li>
-    <li class="projects__item">
-      <router-link class="projects__item__title" to="/projects/scorenco">
+    <li class="projects-item">
+      <router-link class="projects-item-title" to="/projects/scorenco">
         Score n'co
       </router-link>
-      <p class="projects__item__text">
+      <p class="text projects-item-text">
         <router-link to="/projects/scorenco" class="image-link">
           <img 
             src="/assets/images/projects/project-scorenco.jpg"
@@ -56,11 +56,11 @@
         Design and development for an online sports app.
       </p>
     </li>
-    <li class="projects__item">
-      <router-link class="projects__item__title" to="/projects/earth-noise">
+    <li class="projects-item">
+      <router-link class="projects-item-title" to="/projects/earth-noise">
         Earth/Noise
       </router-link>
-        <p class="projects__item__text">
+        <p class="text projects-item-text">
           <router-link to="/projects/earth-noise" class="image-link">
             <img 
               src="/assets/images/projects/project-earth-noise.jpg"
@@ -104,8 +104,8 @@ export default defineComponent({
       title: "Home",
       meta: [
         {
-          name: "njoqi",
-          content: "C'est cool",
+          name: "njoqi · Projects",
+          content: "Things I want to record, display and share.",
         }
       ]
     });
@@ -116,42 +116,49 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+  @import "src/components/_variables.scss";
+
   .projects {
     display: flex;
     flex-wrap: wrap;
+    max-width: $content-max-width;
   }
 
-  .projects__item {
+  .projects-item {
     list-style: none;
     margin-bottom: 2em;
   }
 
   @media all and (min-width: 38rem) {
-    .projects__item {
+    .projects-item {
       width: 50%;
       padding-right: 1em;
     }
 
-    .projects__item:nth-child(2n) {
+    .projects-item:nth-child(2n) {
       padding-left: 1em;
       padding-right: 0;
     }
   }
 
 
-  .projects__item__title {
+  .projects-item-title {
     display: block;
-    font-size: 1.5rem;
+    font-size: $font-size-2;
     margin: 0;
-    padding: 0.25rem 0 0.5rem;
+    padding: 0.25em 0 0;
     text-decoration: none;
-    font-weight: 700;
+    color: $color-text;
+    font-weight: 400;
+
+    @media screen and (min-width: $content-max-width) {
+      font-size: $font-size-2-max;
+    }
   }
 
-  .projects__item__text {
-    font-size: 1rem;
+  .projects-item-text {
     margin: 0;
-    padding: 0.25rem 0;
+    padding: 1em 0 1.5em;
   }
 </style>

@@ -1,21 +1,21 @@
 <template>
   <article class="full-width">
     <header class="article-header">
-      <nav class="article__text">
+      <nav class="text">
         <router-link to="/projects/photographie">
             Photographie index
         </router-link>
       </nav>
-      <h2 class="section__title">
+      <h2>
         Presences
       </h2>
-      <p class="section__text">
+      <p class="text">
         Moments on Earth, suspended, a story hidden within.
       </p>
     </header>
-    <ul class="article-list">
+    <ul class="list">
       <li>
-        <p class="article-photo">
+        <p class="image photograph">
           <img
             src="/assets/images/projects/photographie/presences/21.jpg"
             alt="Black and white valley with clouds contrasting against the mountains"
@@ -24,7 +24,7 @@
         </p>
       </li>
       <li>
-        <p class="article-photo">
+        <p class="image photograph">
           <img
             src="/assets/images/projects/photographie/presences/20.jpg"
             alt="Black and white valley with three small lakes fading into fog"
@@ -33,7 +33,7 @@
         </p>
       </li>
       <li>
-        <p class="article-photo">
+        <p class="image photograph">
           <img
             src="/assets/images/projects/photographie/presences/19.jpg"
             alt="Black and white silhouettes of trees on a recline, fading into fog"
@@ -43,7 +43,7 @@
         </p>
       </li>
       <li>
-        <p class="article-photo">
+        <p class="image photograph">
           <img
             src="/assets/images/projects/photographie/presences/18.jpg"
             alt="Black and white close-up of a branch-like fungus"
@@ -53,7 +53,7 @@
         </p>
       </li>
       <li>
-        <p class="article-photo">
+        <p class="image photograph">
           <img
             src="/assets/images/projects/photographie/presences/17.jpg"
             alt="Hazy wing of a plane with sunshine reflecting on it, fading into the clouds"
@@ -63,7 +63,7 @@
         </p>
       </li>
       <li>
-        <p class="article-photo">
+        <p class="image photograph">
           <img
             src="/assets/images/projects/photographie/presences/16.jpg"
             alt="Silhouettes of street lamps against an evening sky, with a large cloud in the middle"
@@ -73,7 +73,7 @@
         </p>
       </li>
       <li>
-        <p class="article-photo">
+        <p class="image photograph">
           <img
             src="/assets/images/projects/photographie/presences/15.jpg"
             alt="Train tracks disappearing into a forest section, surrounded by distant mountains"
@@ -83,7 +83,7 @@
         </p>
       </li>
       <li>
-        <p class="article-photo">
+        <p class="image photograph">
           <img
             src="/assets/images/projects/photographie/presences/14.jpg"
             alt="Water tower on the side of a hill, with trees lining up along the slope and a foggy background"
@@ -93,7 +93,7 @@
         </p>
       </li>
       <li>
-        <p class="article-photo">
+        <p class="image photograph">
           <img
             src="/assets/images/projects/photographie/presences/13.jpg"
             alt="Industrial complex right in front of a lake, with cloudy mountains behind"
@@ -103,7 +103,7 @@
         </p>
       </li>
       <li>
-        <p class="article-photo">
+        <p class="image photograph">
           <img
             src="/assets/images/projects/photographie/presences/12.jpg"
             alt="Black and white close-up of a rock formation, contrasting against a bright sky"
@@ -113,7 +113,7 @@
         </p>
       </li>
       <li>
-        <p class="article-photo">
+        <p class="image photograph">
           <img
             src="/assets/images/projects/photographie/presences/11.jpg"
             alt="Building with a reflective dome hidden behind trees, with a river next to it and dramatic clouds"
@@ -123,7 +123,7 @@
         </p>
       </li>
       <li>
-        <p class="article-photo">
+        <p class="image photograph">
           <img
             src="/assets/images/projects/photographie/presences/10.jpg"
             alt="Close-up of berries and twigs in the palm of a hand, wearing golden rings"
@@ -133,7 +133,7 @@
         </p>
       </li>
       <li>
-        <p class="article-photo">
+        <p class="image photograph">
           <img
             src="/assets/images/projects/photographie/presences/09.jpg"
             alt="Train power lines following a fence overgrown with vegetation"
@@ -143,7 +143,7 @@
         </p>
       </li>
       <li>
-        <p class="article-photo">
+        <p class="image photograph">
           <img
             src="/assets/images/projects/photographie/presences/08.jpg"
             alt="A dead white butterfly resting in a pot full of dry plants"
@@ -153,7 +153,7 @@
         </p>
       </li>
       <li>
-        <p class="article-photo">
+        <p class="image photograph">
           <img
             src="/assets/images/projects/photographie/presences/07.jpg"
             alt="Silhouette of a crane against a purple sunset sky"
@@ -163,7 +163,7 @@
         </p>
       </li>
       <li>
-        <p class="article-photo">
+        <p class="image photograph">
           <img
             src="/assets/images/projects/photographie/presences/06.jpg"
             alt="Black and white front of a shed with a metal roof and wooden planks walls. A deer head figure is mounted on it"
@@ -173,7 +173,7 @@
         </p>
       </li>
       <li>
-        <p class="article-photo">
+        <p class="image photograph">
           <img
             src="/assets/images/projects/photographie/presences/05.jpg"
             alt="Ceiling mounted lamp reflecting an orange evening light coming from a nearby window"
@@ -183,7 +183,7 @@
         </p>
       </li>
       <li>
-        <p class="article-photo">
+        <p class="image photograph">
           <img
             src="/assets/images/projects/photographie/presences/04.jpg"
             alt="Close-up of an angled tiled roof, underneath it is a small wooden figure. It is surrounded by tree branches"
@@ -193,7 +193,7 @@
         </p>
       </li>
       <li>
-        <p class="article-photo">
+        <p class="image photograph">
           <img
             src="/assets/images/projects/photographie/presences/03.jpg"
             alt="Close-up of autumn leaves"
@@ -203,7 +203,7 @@
         </p>
       </li>
       <li>
-        <p class="article-photo">
+        <p class="image photograph">
           <img
             src="/assets/images/projects/photographie/presences/02.jpg"
             alt="Neon light slightly illuminating a concrete wall and copper pipes"
@@ -213,7 +213,7 @@
         </p>
       </li>
       <li>
-        <p class="article-photo">
+        <p class="image photograph">
           <img
             src="/assets/images/projects/photographie/presences/01.jpg"
             alt="Close-up of a train window and a red curtain, soft light coming from outside"
@@ -245,5 +245,5 @@
   });
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 </style>

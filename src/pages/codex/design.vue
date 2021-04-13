@@ -1,17 +1,17 @@
 <template>
   <header class="full-width article-header">
-    <nav class="article__text">
+    <nav class="text">
       <router-link to="/codex">
         Codex index
       </router-link>
     </nav>
-    <h2 class="article__title">
+    <h2>
       Design
     </h2>
-    <p class="section__text">
+    <p class="text">
       <mark>This page is being built.</mark>
     </p>
-    <blockquote class="article__text">
+    <blockquote class="text">
       “One could describe Design as a plan for arranging elements to accomplish a particular purpose.”
       <cite>Charles Eames</cite>
     </blockquote>
@@ -21,7 +21,7 @@
     <h3>
       Articles
     </h3>
-    <ul class="article-list">
+    <ul class="list">
       <li class="list-item">
         <a href="http://fadeyev.net/design/">
           Design through the lens of the human condition
@@ -44,7 +44,7 @@
     <h3>
       Inspiration sources
     </h3>
-    <ul class="article-list">
+    <ul class="list">
       <li class="list-item">
         <a href="https://www.spoon-tamago.com/">
           Spoon &amp; Tamago
@@ -80,7 +80,7 @@
         meta: [
           {
             name: "description",
-            content: "C'est cool",
+            content: "Resources and thoughts about design.",
           }
         ]
       });
@@ -88,5 +88,5 @@
   });
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 </style>

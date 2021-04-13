@@ -1,12 +1,12 @@
 <template>
   <article class="full-width">
-    <h2 class="article__title">
+    <h2>
       Oops! Something's wrong...
     </h2>
-    <p class="article__text">
+    <p class="text">
       You reached a page that doesn't seem to exist. Either the address has a typo, or a link is broken.
     </p>
-    <p class="article__text">
+    <p class="text">
       How about <router-link to="/">going back to the homepage</router-link>?
     </p>
   </article>
@@ -19,11 +19,11 @@
     name: 'NotFound',
     setup() {
       useHead({
-        title: "Page not found",
+        title: "njoqi · Page not found",
         meta: [
           {
             name: `description`,
-            content: "C'est cool",
+            content: "You reached a page that doesn't seem to exist. Either the address has a typo, or a link is broken.",
           }
         ]
       });
@@ -31,5 +31,5 @@
   });
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 </style>

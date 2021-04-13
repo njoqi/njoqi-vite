@@ -31,7 +31,8 @@ The css bundle is minimized, and hashed for cache busting.
 
 ### Improvements
 
-- Cleanup and separate the layouts into components
-- Test importing content through Markdown files or a headless CMS
-- Hash the css bundle according to its contents
-- Fluid typography
+- [x] Fluid typography
+- [ ] Add small illustrations for the 3 main pages
+- [ ] Cleanup and separate the layouts into components
+- [ ] Test importing content through Markdown files or a headless CMS
+- [] Hash the css bundle according to its contents
