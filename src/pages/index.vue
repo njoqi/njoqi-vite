@@ -1,9 +1,9 @@
 <template>
   <article class="full-width">
     <header class="article-header">
-      <h2>
+      <h1>
         Hello! Get comfy<span class="bright">.</span>
-      </h2>
+      </h1>
       <p class="text">
         Welcome to my humble place. I'm Flynn, a digital creative and front-end developer.
         Rest around the fire and take a look at things I want to record, display and share.

@@ -19,7 +19,7 @@
 
   <article class="full-width">
     <h3>
-      Articles
+      General
     </h3>
     <ul class="list">
       <li class="list-item">
@@ -35,6 +35,19 @@
       <li class="list-item">
         <a href="https://blog.grio.com/2016/03/5-essential-japanese-design-principles.html">
           5 essential japanese design principles
+        </a>
+      </li>
+    </ul>
+  </article>
+
+  <article class="full-width">
+    <h3>
+      Web
+    </h3>
+    <ul class="list">
+      <li class="list-item">
+        <a href="https://bighack.org/">
+          The Big Hack
         </a>
       </li>
     </ul>

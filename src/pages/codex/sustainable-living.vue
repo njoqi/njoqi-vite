@@ -5,9 +5,9 @@
         Codex index
       </router-link>
     </nav>
-    <h2>
+    <h1>
       Design
-    </h2>
+    </h1>
     <p class="text">
       <mark>This page is being built.</mark>
     </p>
@@ -17,9 +17,9 @@
   </header>
 
   <article class="full-width">
-    <h3>
+    <h2>
       Websites
-    </h3>
+    </h2>
     <ul class="list">
       <li class="list-item">
         <a href="https://solar.lowtechmagazine.com">
@@ -35,22 +35,32 @@
   </article>
 
   <article class="full-width">
-    <h3>
+    <h2>
       Articles
-    </h3>
+    </h2>
     <ul class="list">
       <li class="list-item">
         <a href="https://frjohnpeck.com/permaculture-and-the-myth-of-overpopulation/">
           Permaculture and the Myth of Overpopulation
         </a>
       </li>
+      <li class="list-item">
+        <a href="http://gauthierroussilhe.com/en/posts/une-erreur-de-tech">
+          A question of "tech"
+        </a>
+      </li>
+      <li class="list-item">
+        <a href="http://gauthierroussilhe.com/en/posts/convert-low-tech">
+          Digital guide to low-tech
+        </a>
+      </li>
     </ul>
   </article>
 
   <article class="full-width">
-    <h3>
+    <h2>
       Products
-    </h3>
+    </h2>
     <ul class="list">
       <li class="list-item">
         <a href="https://deciwatt.global/">

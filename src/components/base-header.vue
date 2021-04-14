@@ -1,12 +1,12 @@
 <template>
   <header class="base-header">
     <div class="base-header-top">
-      <h1>
-        <router-link class="base-header-home" to="/">
-          <img class="base-header-logo" src="/assets/logo.png" alt="Logo" />
+      <p class="base-header-home">
+        <router-link class="base-header-link" to="/">
+          <img class="base-header-logo" src="/assets/logo.png" alt="njoqi logo" />
           njoqi
         </router-link>
-      </h1>
+      </p>
     </div>
     <BaseNav />
   </header>
@@ -26,7 +26,7 @@ export default defineComponent({
 <style lang="scss">
   @import "src/components/_variables.scss";
 
-  h1 {
+  .base-header-home {
     font-weight: 400;
     font-size: $font-size-1;
     letter-spacing: 0.125em;
@@ -51,7 +51,7 @@ export default defineComponent({
     background: $color-secondary;
   }
 
-  .base-header-home {
+  .base-header-link {
     color: $color-text;
     display: inline-block;
     padding-right: 0.2em;
@@ -59,8 +59,8 @@ export default defineComponent({
     border-right: 0.2em solid transparent;
   }
 
-  .base-header-home:hover,
-  .base-header-home:active {
+  .base-header-link:hover,
+  .base-header-link:active {
       border-color: $color-light;
   }
 

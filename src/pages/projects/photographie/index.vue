@@ -6,9 +6,9 @@
             Projects index
         </router-link>
       </nav>
-      <h2>
+      <h1>
         Photographie
-      </h2>
+      </h1>
       <p class="text">
         Selected photographic works.
       </p>

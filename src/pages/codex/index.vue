@@ -1,17 +1,17 @@
 <template>
   <header class="full-width article-header">
-    <h2>
+    <h1>
       Codex
-    </h2>
+    </h1>
     <p class="text">
       A repository of resources, logs and recommendations. I plan on keeping a printed archive of these at some point in the future, to avoid relying on their online availability.
     </p>
   </header>
 
   <article class="full-width">
-    <h3>
+    <h2>
       Knowledge
-    </h3>
+    </h2>
     <p class="text">
       Links and notes about subjects of interest. Note that these categories can overlap.
     </p>
@@ -26,9 +26,9 @@
   </article>
 
   <article class="full-width">
-    <h3>
+    <h2>
       Personal logs
-    </h3>
+    </h2>
     <ul class="list">
       <li class="list-item">
         <router-link to="/codex/webcomics">Webcomics</router-link>

@@ -6,9 +6,9 @@
             Photographie index
         </router-link>
       </nav>
-      <h2>
+      <h1>
         Intervalles
-      </h2>
+      </h1>
       <p class="text">
         The richness of night interrupted by insular sources of light.
       </p>

@@ -6,9 +6,9 @@
             Photographie index
         </router-link>
       </nav>
-      <h2>
+      <h1>
         Presences
-      </h2>
+      </h1>
       <p class="text">
         Moments on Earth, suspended, a story hidden within.
       </p>

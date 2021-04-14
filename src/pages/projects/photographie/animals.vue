@@ -6,9 +6,9 @@
             Photographie index
         </router-link>
       </nav>
-      <h2>
+      <h1>
         Animals
-      </h2>
+      </h1>
       <p class="text">
         Fur, scales or feathers—creatures of lands and seas, whenever I manage to spot and approach them.
       </p>

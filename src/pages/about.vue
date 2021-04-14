@@ -1,17 +1,17 @@
 <template>
   <header class="full-width article-header">
-    <h2>
+    <h1>
       About
-    </h2>
+    </h1>
     <p class="text">
       Information about this website and its author.
     </p>
   </header>
 
   <article class="full-width">
-    <h3 >
+    <h2>
       Flynn Salazar
-    </h3>
+    </h2>
     <p class="text">
       That's me! A young creative person. I'm nonbinary and my pronouns are <mark>they/them</mark>. I currently live in <mark>Nantes, France</mark>, where I work at home on various projects. I used to be a graphic designer & front-end developer at <a href="https://scorenco.com" title="A platform for sports fans at all levels of play">Score n'co</a>, but am now looking for a new, exciting path to explore!
     </p>
@@ -53,9 +53,9 @@
   </article>
 
   <article class="full-width">
-    <h3 >
+    <h2>
       njoqi
-    </h3>
+    </h2>
     <p class="text">
       <mark>njoqi</mark> is the place you're currently visiting. It was inspired by projects like <a href="https://wiki.xxiivv.com/">Neauoire's XXIIVV</a>, and aims to become:
     </p>

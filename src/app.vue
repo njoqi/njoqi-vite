@@ -38,8 +38,8 @@ export default defineComponent({
 
   @font-face {
       font-family: 'Augillion Web';
-      src: url('/assets/fonts/augillion-regular-web.woff2') format('woff2'),
-          url('/assets/fonts/augillion-regular-web.woff') format('woff');
+      src: url('/assets/fonts/augillion-regular-subset.woff2') format('woff2'),
+          url('/assets/fonts/augillion-regular-subset.woff') format('woff');
       font-weight: normal;
       font-style: normal;
   }
@@ -72,7 +72,7 @@ export default defineComponent({
     color: $color-text-secondary;
   }
 
-  h2 {
+  h1 {
     line-height: 1.125;
     font-weight: 400;
     font-size: $font-size-4;
@@ -86,7 +86,7 @@ export default defineComponent({
     }
   }
 
-  h3 {
+  h2 {
     line-height: 1.125;
     font-weight: 400;
     font-size: $font-size-3;
@@ -97,7 +97,7 @@ export default defineComponent({
     }
   }
 
-  h4 {
+  h3 {
     font-weight: 400;
     font-size: $font-size-2;
     margin: 2em 0 0.5em;

@@ -5,9 +5,9 @@
         Codex index
       </router-link>
     </nav>
-    <h2>
+    <h1>
       Webcomics
-    </h2>
+    </h1>
     <p class="text">
       <mark>This page is being built.</mark>
     </p>
@@ -16,9 +16,9 @@
     </p>
   </header>
   <article class="full-width">
-    <h3 >
+    <h2>
       <a href="https://hardlacquer.com/post/185301375229/post1x01">Hard Lacquer</a>
-    </h3>
+    </h2>
     <dl class="descriptive-list">
       <dt>Type:</dt>
       <dd>modern</dd>
@@ -28,9 +28,9 @@
     </dl>
   </article>
   <article class="full-width">
-    <h3 >
+    <h2>
       <a href="https://www.onasunbeam.com/">On a sunbeam</a>
-    </h3>
+    </h2>
     <dl class="descriptive-list">
       <dt>Type:</dt>
       <dd>sci-fi / fantasy</dd>
@@ -40,9 +40,9 @@
     </dl>
   </article>
   <article class="full-width">
-    <h3 >
+    <h2>
       <a href="http://sssscomic.com/">Stand Still. Stay Silent</a>
-    </h3>
+    </h2>
     <dl class="descriptive-list">
       <dt>Type:</dt>
       <dd>post-apo / fantasy</dd>
@@ -52,9 +52,9 @@
     </dl>
   </article>
   <article class="full-width">
-    <h3 >
+    <h2>
       <a href="https://www.webtoons.com/en/romance/lore-olympus/list?title_no=1320">Lore Olympus</a>
-    </h3>
+    </h2>
     <dl class="descriptive-list">
       <dt>Type:</dt>
       <dd>mythological / modern</dd>
@@ -64,9 +64,9 @@
     </dl>
   </article>
   <article class="full-width">
-    <h3 >
+    <h2>
       <a href="http://witchycomic.com/comic/page-1/">Witchy</a>
-    </h3>
+    </h2>
     <dl class="descriptive-list">
       <dt>Type:</dt>
       <dd>fantasy</dd>

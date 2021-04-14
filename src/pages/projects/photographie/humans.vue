@@ -6,9 +6,9 @@
             Photographie index
         </router-link>
       </nav>
-      <h2>
+      <h1>
         Humans
-      </h2>
+      </h1>
       <p class="text">
         Faces and bodies, stares, emotions or attitudes.
       </p>

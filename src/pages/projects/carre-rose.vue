@@ -6,9 +6,9 @@
             Projects index
         </router-link>
       </nav>
-      <h2 >
+      <h1>
         Carré Rose
-      </h2>
+      </h1>
       <p class="text">
         Design for an adult movie label.
       </p>

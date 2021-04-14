@@ -5,9 +5,9 @@
         Codex index
       </router-link>
     </nav>
-    <h2>
+    <h1>
       Tea
-    </h2>
+    </h1>
     <p class="text">
       <mark>This page is being built.</mark>
     </p>
@@ -17,9 +17,9 @@
   </header>
 
   <article class="full-width">
-    <h3>
+    <h2>
       Resources about tea
-    </h3>
+    </h2>
     <ul class="list">
       <li class="list-item">
         <a href="https://japaneseteasommelier.wordpress.com/2018/03/19/regional-banchas-as-ethnographic-documents/">Regional banchas as ethnographic documents</a>
@@ -37,13 +37,13 @@
   </article>
 
   <section class="full-width">
-    <h3 >
+    <h2>
       Tea log
-    </h3>
+    </h2>
     <article>
-      <h4>
+      <h3>
         Sencha
-      </h4>
+      </h3>
       <p class="image">
         <img src="/assets/images/codex/tea/sencha.jpg" alt="Close-up of green, dry grass-like sencha leaves.">
       </p>
@@ -62,9 +62,9 @@
       </dl>
     </article>
     <article>
-      <h4>
+      <h3>
         Kasakura
-      </h4>
+      </h3>
       <p class="image">
         <img src="/assets/images/codex/tea/kasakura.jpg" alt="Close-up of dark kasakura leaves.">
       </p>
@@ -83,9 +83,9 @@
       </dl>
     </article>
     <article>
-      <h4>
+      <h3>
         Hōji Kukicha
-      </h4>
+      </h3>
       <p class="image">
         <img src="/assets/images/codex/tea/hojikukicha.jpg" alt="Close-up of brown hōjikukicha twigs.">
       </p>

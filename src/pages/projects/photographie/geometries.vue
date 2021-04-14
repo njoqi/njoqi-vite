@@ -6,9 +6,9 @@
             Photographie index
         </router-link>
       </nav>
-      <h2>
+      <h1>
         Géométries
-      </h2>
+      </h1>
       <p class="text">
         Masses, shapes and patterns of fabricated landscapes.
       </p>

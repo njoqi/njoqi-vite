@@ -6,9 +6,9 @@
             Projects index
         </router-link>
       </nav>
-      <h2>
+      <h1>
         Score n'co
-      </h2>
+      </h1>
       <p class="text">
         Design and development for an online sports app.
       </p>

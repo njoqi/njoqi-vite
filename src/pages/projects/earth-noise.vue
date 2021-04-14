@@ -6,9 +6,9 @@
             Projects index
         </router-link>
       </nav>
-      <h2>
+      <h1>
         Earth/Noise
-      </h2>
+      </h1>
       <p class="text">
         <mark>This page is being built.</mark>
       </p>
@@ -16,15 +16,15 @@
         <abbr title="Climate fiction">Cli-fi</abbr> story about being part of this world.
       </p>
     </header>
-    <h3 >
+    <h2>
       Synopsis
-    </h3>
+    </h2>
     <p class="text">
       Sometime near the end of the 21st century, young adult Elwan contemplates their future, makes difficult life choices, and uncovers dangerous corporate schemes with the help of a childhood friend, a mischievous grandma and that secretive girl who keeps coming to the family café.
     </p>
-    <h3 >
+    <h2>
       Themes
-    </h3>
+    </h2>
     <p class="text">
       The story is meant to mix slice of life content with an overarching story questioning themes like water scarcity, climate change and the politics of energy availibility. It also explores possible alternatives to our current ways of life regarding society and technology.
     </p>
