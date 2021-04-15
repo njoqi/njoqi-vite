@@ -10,7 +10,7 @@
         Photographie
       </h1>
       <p class="text">
-        Selected photographic works.
+        {{ description }}
       </p>
     </header>
     <section>
@@ -79,20 +79,26 @@
 </template>
 
 <script>
-  import { defineComponent } from 'vue';
+  import { defineComponent, ref } from 'vue';
   import { useHead } from '@vueuse/head';
   export default defineComponent({
     name: 'Photographie',
     setup() {
+      const description = ref("Selected photographic works.");
+
       useHead({
         title: "njoqi · Photographie",
         meta: [
           {
             name: "description",
-            content: "Selected photographic works.",
+            content: description,
           }
         ]
       });
+
+      return {
+        description
+      };
     }
   });
 </script>

@@ -1,34 +1,54 @@
 <template>
+  <nav class="text center base-return-top">
+    <a href="#">Return to top ↑</a>
+  </nav>
   <footer class="base-footer" role="contentinfo">
     <p class="base-footer-copyright">
       <small class="base-footer-text">
         Set in <a href="http://atipofoundry.com/fonts/archia">Archia</a> and <a href="https://www.myfonts.com/fonts/sarid-ezra/augillion/">Augillion</a>.
       </small>
-      <a class="base-footer-logo image-link" href="https://webring.xxiivv.com/#random" title="Part of the XXIIVV Webring">
-        <img class="base-footer-webring" alt="Webring logo" src="https://webring.xxiivv.com/icon.black.svg" />
-      </a>
-      <small class="base-footer-text">
-        Website and contents <a href="https://creativecommons.org/licenses/by-nc/4.0/"><abbr title="Creative Commons Attribution-NonCommercial 4.0 International">CC BY-NC 4.0</abbr></a> <span class="accent">❤</span>
+      <span class="base-footer-text base-footer-logo">
+        <a class="base-footer-webring image-link" href="https://webring.xxiivv.com/" title="Part of the XXIIVV Webring">
+          <img class="base-footer-webring-logo" alt="Webring logo" src="https://webring.xxiivv.com/icon.black.svg" />
+        </a>
+      </span>
+      <span class="base-footer-text">
+        <router-link to="/">Home</router-link> - <router-link to="/sitemap">Sitemap</router-link>
+      </span>
+    </p>
+    <p class="text base-footer-text">
+      <small>
+        Website and contents <a href="https://creativecommons.org/publicdomain/zero/1.0/"><abbr title="Creative Commons Zero Public Domain Dedication">CC0</abbr></a> (unless specified otherwise) <span class="accent">❤</span><br/>
+        <a href="https://github.com/njoqi/njoqi-vite">Source code</a> available on Github and <a href="https://unlicense.org/">unlicensed</a>
       </small>
     </p>
   </footer>
 </template>
 
 <script>
-import { defineComponent } from 'vue';
+  import { defineComponent } from 'vue';
 
-export default defineComponent({
-  name: "BaseFooter"
-});
+  export default defineComponent({
+    name: "BaseFooter"
+  });
 </script>
 
 <style lang="scss">
   @import "src/components/_variables.scss";
 
+  .base-return-top {
+    font-size: $font-size--1;
+    margin: 1em;
+
+    @media all and (min-width: $text-max-width) {
+      font-size: $font-size--1-max;
+    }
+  }
+
   .base-footer {
-  padding: 3em 1em;
-  text-align: center;
-  border-top: 0.2em solid $color-text;
+    padding: 3em 1em;
+    text-align: center;
+    border-top: 0.2em solid $color-text;
   }
 
   .base-footer-copyright {
@@ -38,18 +58,27 @@ export default defineComponent({
     align-items: center;
   }
 
+  .base-footer-text {
+    font-size: $font-size--1;
+    flex: 1 1 0;
+
+    @media all and (min-width: $text-max-width) {
+      font-size: $font-size--1-max;
+    }
+  }
+
   @media all and (max-width: 36rem) {
     .base-footer-copyright {
       flex-direction: column;
     }
     
-    .base-footer-logo {
-      order: 1;
+    .base-footer-text {
+      order: 2;
       margin-bottom: 1em;
     }
     
-    .base-footer-text {
-      order: 2;
+    .base-footer-logo {
+      order: 1;
     }
   }
 
@@ -59,52 +88,53 @@ export default defineComponent({
     }
   }
 
-  .base-footer-logo:hover .base-footer-webring,
-  .base-footer-logo:active .base-footer-webring {
+  .base-footer-webring:hover .base-footer-webring-logo,
+  .base-footer-webring:active .base-footer-webring-logo {
     background-color: $color-secondary;
   }
 
-  .base-footer-logo {
+  .base-footer-webring {
     position: relative;
-    width: 2.8em;
-    padding: 0 0.2em;
-    flex-shrink: 0;
+    display: inline-block;
   }
 
-  .base-footer-webring {
+  .base-footer-webring-logo {
     height: 2.4em;
     width: 2.4em;
     padding: 0.12em 0.3em 0.48em;
     border-radius: 50%;
-    margin-top: 0.5em;
-    transition: transform .15s;
+    transition: transform 0.4s;
     transform: scale(1);
   }
 
-  .base-footer-logo:after {
+  .base-footer-webring:after {
     content:" ";
     position: absolute;
-    top: 50%;
-    left: 0.2em;
+    pointer-events: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
     display: block;
     height: 2.4em;
     width: 2.4em;
+    padding: 0.12em 0.3em 0.48em;
     border-radius: 50%;
     border: 0.1em solid $color-secondary;
     opacity: 0;
     transition: transform .15s, opacity .15s;
-    transform: translateY(-50%) scale(1);
+    transform: scale(1);
+    transform-origin: 50% 50%;
   }
 
-  .base-footer-logo:hover .base-footer-webring,
-  .base-footer-logo:active .base-footer-webring {
+  .base-footer-webring:hover .base-footer-webring-logo,
+  .base-footer-webring:active .base-footer-webring-logo {
     transform: rotate(120deg);
   }
 
-  .base-footer-logo:hover:after,
-  .base-footer-logo:active:after {
+  .base-footer-webring:hover:after,
+  .base-footer-webring:active:after {
     opacity: 1;
-    transform: translateY(-46.7%) scale(1.3);
+    transform: scale(1.4);
   }
 
 </style>

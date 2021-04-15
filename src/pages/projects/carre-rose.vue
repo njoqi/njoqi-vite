@@ -10,7 +10,7 @@
         Carré Rose
       </h1>
       <p class="text">
-        Design for an adult movie label.
+        {{ description }}
       </p>
     </header>
     <p class="text">
@@ -43,24 +43,33 @@
         height="841"
         width="1400">
     </p>
+    <p class="text">
+      <small>Note: the "Carré Rose Films" brand, its design elements and contents are copyrighted by <a href="https://carrerosefilms.com/en/">carrerosefilms.com</a>.</small>
+    </p>
   </article>
 </template>
 
 <script>
-  import { defineComponent } from 'vue';
+  import { defineComponent, ref } from 'vue';
   import { useHead } from '@vueuse/head';
   export default defineComponent({
     name: 'CarreRose',
     setup() {
+      const description = ref("Design for an adult movie label.");
+
       useHead({
         title: "njoqi · Carré Rose",
         meta: [
           {
             name: "description",
-            content: "Design for an adult movie label.",
+            content: description,
           }
         ]
       });
+
+      return {
+        description
+      };
     }
   });
 </script>

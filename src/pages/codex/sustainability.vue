@@ -6,13 +6,13 @@
       </router-link>
     </nav>
     <h1>
-      Design
+      Sustainability
     </h1>
     <p class="text">
       <mark>This page is being built.</mark>
     </p>
     <p class="text">
-      As ecological disasters are surrounding us and climate crisis keeps getting more serious, I find myself compelled to learn about the ways humanity can lessen its impact on the planet.
+      As ecological disasters are surrounding us and climate crisis keeps getting more serious, I find myself compelled to learn about the ways we can lessen our impact on the planet.
     </p>
   </header>
 
@@ -29,6 +29,16 @@
       <li class="list-item">
         <a href="https://www.designlife-cycle.com/">
           Design life-cycle
+        </a>
+      </li>
+      <li class="list-item">
+        <a href="https://materiom.org/">
+          Materiom
+        </a>
+      </li>
+      <li class="list-item">
+        <a href="https://homebrewserver.club/">
+          homebrewserver.club
         </a>
       </li>
     </ul>
@@ -80,14 +90,14 @@
   import { defineComponent } from 'vue';
   import { useHead } from '@vueuse/head';
   export default defineComponent({
-    name: 'SustainableLiving',
+    name: 'Sustainability',
     setup() {
       useHead({
-        title: "njoqi · Sustainable Living",
+        title: "njoqi · Sustainability",
         meta: [
           {
             name: "description",
-            content: "Some ways humanity can lessen its impact on the planet.",
+            content: "Some ways we can lessen our impact on the planet.",
           }
         ]
       });

@@ -31,12 +31,8 @@ export default defineComponent({
     font-size: $font-size-1;
     letter-spacing: 0.125em;
     margin: auto;
-    padding: 0.8em 0.4em;
+    padding: 0.4em 0.4em;
     max-width: $content-max-width;
-
-    @media all and (min-width: 42rem) {
-      padding: 0.8em 0.4em;
-    }
 
     @media screen and (min-width: $content-max-width) {
       font-size: $font-size-1-max;

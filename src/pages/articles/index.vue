@@ -1,15 +1,16 @@
 <template>
-  <article class="full-width">
-    <header class="full-width article-header">
-      <h1>
-        Whoops! Something's wrong...
-      </h1>
-    </header>
+  <header class="article-header">
+    <h1>
+      Articles
+    </h1>
     <p class="text">
       {{ description }}
     </p>
+  </header>
+
+  <article>
     <p class="text">
-      How about <router-link to="/">going back to the homepage</router-link>?
+      Nothing for now... (the first article is being written!)
     </p>
   </article>
 </template>
@@ -18,20 +19,19 @@
   import { defineComponent, ref } from 'vue';
   import { useHead } from '@vueuse/head';
   export default defineComponent({
-    name: 'NotFound',
+    name: 'Articles',
     setup() {
-      const description = ref("You reached a page that doesn't seem to exist. Either the address has a typo, or a link is broken.");
+      const description = ref("Thoughts and explanations.");
 
       useHead({
-        title: "njoqi · Page not found",
+        title: "njoqi · Articles",
         meta: [
           {
-            name: `description`,
+            name: "description",
             content: description,
           }
         ]
       });
-
       return {
         description
       };

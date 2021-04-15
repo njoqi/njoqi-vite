@@ -23,7 +23,7 @@ Assets such as images or fonts are served through the `public` folder.
 `npm run build`
 
 Will compile the `.vue` files in `src/pages` into html files, while keeping the sames routes as in development.
-Since we simply want a static prerender and don't need preload directives, only one build step is performed instead of client-side + server (no manifest generation, no duplicate asset folders, etc).
+Since we simply want a static prerender and don't need preload directives, only one build step is performed instead of client-side + server (no manifest generation, no duplicate assets folders, etc).
 
 The static website is generated in `/dist`.
 
@@ -35,4 +35,10 @@ The css bundle is minimized, and hashed for cache busting.
 - [ ] Add small illustrations for the 3 main pages
 - [ ] Cleanup and separate the layouts into components
 - [ ] Test importing content through Markdown files or a headless CMS
-- [] Hash the css bundle according to its contents
+- [ ] Hash the css bundle according to its contents
+- [ ] Add a french version
+- [ ] Make the Vite project template available on its own
+
+### Unlicense
+
+This repository and its contents are [unlicensed](UNLICENSE).

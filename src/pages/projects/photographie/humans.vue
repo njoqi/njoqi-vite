@@ -10,7 +10,7 @@
         Humans
       </h1>
       <p class="text">
-        Faces and bodies, stares, emotions or attitudes.
+        {{ description }}
       </p>
     </header>
     <ul class="list">
@@ -54,20 +54,26 @@
 </template>
 
 <script>
-  import { defineComponent } from 'vue';
+  import { defineComponent, ref } from 'vue';
   import { useHead } from '@vueuse/head';
   export default defineComponent({
     name: 'Humans',
     setup() {
+      const description = ref("Faces and bodies, stares, emotions or attitudes.");
+
       useHead({
         title: "njoqi · Humans",
         meta: [
           {
             name: "description",
-            content: "Selected photographic works - Faces and bodies, stares, emotions or attitudes.",
+            content: "Selected photographic works - " + description.value,
           }
         ]
       });
+
+      return {
+        description
+      };
     }
   });
 </script>

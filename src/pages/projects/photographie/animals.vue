@@ -10,7 +10,7 @@
         Animals
       </h1>
       <p class="text">
-        Fur, scales or feathers—creatures of lands and seas, whenever I manage to spot and approach them.
+        {{ description }}
       </p>
     </header>
     <ul class="list">
@@ -139,20 +139,26 @@
 </template>
 
 <script>
-  import { defineComponent } from 'vue';
+  import { defineComponent, ref } from 'vue';
   import { useHead } from '@vueuse/head';
   export default defineComponent({
     name: 'Animals',
     setup() {
+      const description = ref("Fur, scales or feathers—creatures of lands and seas, whenever I manage to spot and approach them.");
+
       useHead({
         title: "njoqi · Animals",
         meta: [
           {
             name: "description",
-            content: "Selected photographic works - Fur, scales or feathers—creatures of lands and seas, whenever I manage to spot and approach them.",
+            content: "Selected photographic works - " + description.value,
           }
         ]
       });
+
+      return {
+        description
+      };
     }
   });
 </script>

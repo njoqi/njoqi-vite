@@ -10,7 +10,7 @@
         Géométries
       </h1>
       <p class="text">
-        Masses, shapes and patterns of fabricated landscapes.
+        {{ description }}
       </p>
     </header>
     <ul class="list">
@@ -59,20 +59,26 @@
 </template>
 
 <script>
-  import { defineComponent } from 'vue';
+  import { defineComponent, ref } from 'vue';
   import { useHead } from '@vueuse/head';
   export default defineComponent({
     name: 'Géometries',
     setup() {
+      const description = ref("Masses, shapes and patterns of fabricated landscapes.");
+
       useHead({
         title: "njoqi · Géometries",
         meta: [
           {
             name: "description",
-            content: "Selected photographic works - Masses, shapes and patterns of fabricated landscapes.",
+            content: "Selected photographic works - " + description.value
           }
         ]
       });
+
+      return {
+        description
+      };
     }
   });
 </script>

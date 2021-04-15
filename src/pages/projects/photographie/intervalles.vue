@@ -10,7 +10,7 @@
         Intervalles
       </h1>
       <p class="text">
-        The richness of night interrupted by insular sources of light.
+        {{ description }}
       </p>
     </header>
     <ul class="list">
@@ -44,20 +44,26 @@
 </template>
 
 <script>
-  import { defineComponent } from 'vue';
+  import { defineComponent, ref } from 'vue';
   import { useHead } from '@vueuse/head';
   export default defineComponent({
     name: 'Intervalles',
     setup() {
+      const description = ref("The richness of night interrupted by insular sources of light.");
+
       useHead({
         title: "njoqi · Intervalles",
         meta: [
           {
             name: "description",
-            content: "Selected photographic works - The richness of night interrupted by insular sources of light.",
+            content: "Selected photographic works - " + description.value
           }
         ]
       });
+
+      return {
+        description
+      };
     }
   });
 </script>

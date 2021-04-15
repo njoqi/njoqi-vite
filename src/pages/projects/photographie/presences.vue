@@ -10,7 +10,7 @@
         Presences
       </h1>
       <p class="text">
-        Moments on Earth, suspended, a story hidden within.
+        {{ description }}
       </p>
     </header>
     <ul class="list">
@@ -227,20 +227,26 @@
 </template>
 
 <script>
-  import { defineComponent } from 'vue';
+  import { defineComponent, ref } from 'vue';
   import { useHead } from '@vueuse/head';
   export default defineComponent({
     name: 'Presences',
     setup() {
+      const description = ref("Moments on Earth, suspended, a story hidden within.");
+
       useHead({
         title: "njoqi · Presences",
         meta: [
           {
             name: "description",
-            content: "Selected photographic works - Moments on Earth, suspended, a story hidden within.",
+            content: "Selected photographic works - " + description.value
           }
         ]
       });
+
+      return {
+        description
+      };
     }
   });
 </script>

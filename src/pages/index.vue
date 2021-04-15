@@ -5,71 +5,71 @@
         Hello! Get comfy<span class="bright">.</span>
       </h1>
       <p class="text">
-        Welcome to my humble place. I'm Flynn, a digital creative and front-end developer.
+        Welcome to my humble place. I'm Flynn, I make and learn things.
         Rest around the fire and take a look at things I want to record, display and share.
         Most are ongoing projects. Last updated: <mark>{{ lastUpdated }}</mark>
       </p>
     </header>
     <ul class="projects">
       <li class="projects-item">
-        <router-link to="/projects/photographie" class="projects-item-title">
-          Photographie
-        </router-link>
-        <p class="text projects-item-text">
-          <router-link to="/projects/photographie" class="image-link">
+        <router-link to="/projects/photographie" class="projects-item-link">
+          <h2 class="projects-item-title">
+            Photographie
+          </h2>
+          <p class="projects-item-text">
             <img 
               src="/assets/images/projects/project-photographie.jpg"
               alt="Photograph of animals"
               height="560"
               width="800" />
-          </router-link>
-          Selected photographic works.
-        </p>
-    </li>
-    <li class="projects-item">
-      <router-link class="projects-item-title" to="/projects/carre-rose">
-        Carré Rose
-      </router-link>
-      <p class="text projects-item-text">
-        <router-link to="/projects/carre-rose" class="image-link">
-          <img 
-            src="/assets/images/projects/project-carre-rose.jpg"
-            alt="Digital app screens"
-            height="560"
-            width="800" />
+            Selected photographic works.
+          </p>
         </router-link>
-        Design for an adult movie label.
-      </p>
-    </li>
-    <li class="projects-item">
-      <router-link class="projects-item-title" to="/projects/scorenco">
-        Score n'co
-      </router-link>
-      <p class="text projects-item-text">
-        <router-link to="/projects/scorenco" class="image-link">
-          <img 
-            src="/assets/images/projects/project-scorenco.jpg"
-            alt="Digital app screens"
-            height="560"
-            width="800" />
+      </li>
+      <li class="projects-item">
+        <router-link to="/projects/carre-rose" class="projects-item-link">
+            <h2 class="projects-item-title">
+              Carré Rose
+            </h2>
+            <p class="projects-item-text">
+              <img 
+                src="/assets/images/projects/project-carre-rose.jpg"
+                alt="Digital app screens"
+                height="560"
+                width="800" />
+              Design for an adult movie label.
+            </p>
         </router-link>
-        Design and development for an online sports app.
-      </p>
-    </li>
-    <li class="projects-item">
-      <router-link class="projects-item-title" to="/projects/earth-noise">
-        Earth/Noise
-      </router-link>
-        <p class="text projects-item-text">
-          <router-link to="/projects/earth-noise" class="image-link">
-            <img 
-              src="/assets/images/projects/project-earth-noise.jpg"
-              alt="Illustration of a character"
-              height="560"
-              width="800" />
-          </router-link>
-          <abbr title="Climate fiction">Cli-fi</abbr> story about being part of this world.
-        </p>
+      </li>
+      <li class="projects-item">
+        <router-link to="/projects/scorenco" class="projects-item-link">
+            <h2 class="projects-item-title">
+              Score n'co
+            </h2>
+            <p class="projects-item-text">
+              <img 
+                src="/assets/images/projects/project-scorenco.jpg"
+                alt="Digital app screens"
+                height="560"
+                width="800" />
+              Design and development for an online sports app.
+            </p>
+        </router-link>
+      </li>
+      <li class="projects-item">
+        <router-link to="/projects/earth-noise" class="projects-item-link">
+            <h2 class="projects-item-title">
+              Earth/Noise
+            </h2>
+            <p class="projects-item-text">
+              <img 
+                src="/assets/images/projects/project-earth-noise.jpg"
+                alt="Illustration of a character"
+                height="560"
+                width="800" />
+              <abbr title="Climate fiction">Cli-fi</abbr> story about being part of this world.
+            </p>
+        </router-link>
       </li>
     </ul>
   </article>
@@ -99,13 +99,14 @@ export default defineComponent({
     const today = new Date(todayTimestamp);
     const [todayMonth, todayDate, todayYear] = today.toLocaleDateString("en-US").split("/");
     const lastUpdated = ref(todayDate + " " + months[todayMonth - 1] + " " + todayYear);
+    const description = ref("Things I want to record, display and share.");
 
     useHead({
       title: "Home",
       meta: [
         {
           name: "njoqi · Projects",
-          content: "Things I want to record, display and share.",
+          content: description,
         }
       ]
     });
@@ -127,7 +128,7 @@ export default defineComponent({
 
   .projects-item {
     list-style: none;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
   }
 
   @media all and (min-width: 38rem) {
@@ -144,21 +145,21 @@ export default defineComponent({
 
 
   .projects-item-title {
-    display: block;
     font-size: $font-size-2;
-    margin: 0;
-    padding: 0.25em 0 0;
-    text-decoration: none;
-    color: $color-text;
-    font-weight: 400;
+    margin: 0 0 0.5em;
 
-    @media screen and (min-width: $content-max-width) {
+    @media all and (min-width: $text-max-width) {
       font-size: $font-size-2-max;
     }
   }
 
+  .projects-item-link {
+    display: block;
+    text-decoration: none;
+    color: $color-text;
+  }
+
   .projects-item-text {
-    margin: 0;
-    padding: 1em 0 1.5em;
+    line-height: 1.5em;
   }
 </style>

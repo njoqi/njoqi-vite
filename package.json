@@ -5,6 +5,7 @@
   "engines": {
     "node": "14.16.x"
   },
+  "license" : "Unlicense",
   "main": "server.js",
   "private": true,
   "scripts": {
@@ -30,7 +31,6 @@
     "url": "https://github.com/njoqi/njoqi-vite/issues"
   },
   "author": "njoqi",
-  "license": "ISC",
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.1",
     "@vitejs/plugin-vue-jsx": "^1.1.3",

@@ -4,7 +4,7 @@
       About
     </h1>
     <p class="text">
-      Information about this website and its author.
+      {{ description }}
     </p>
   </header>
 
@@ -45,7 +45,7 @@
       </li>
     </ul>
     <p class="text">
-      When I'm not jumping around in code, words, drawings and animated series, you can usually find me <a href="/codex/tea/">drinking tea</a>, taking a stroll, raising plants and/or taking <a href="/photographie/">photos</a>.
+      When I'm not jumping around in code, words, drawings and animated series, you can usually find me <router-link to="/codex/tea/">drinking tea</router-link>, taking a stroll, raising plants and/or taking <router-link to="/projects/photographie/">photos</router-link>.
     </p>
     <p class="text">
       You can chat with me by mail at <mark><a href="mailto:hello@njoqi.me" class="mail-link">hello@njoqi.me</a></mark>, on Discord as <mark>Meryl#6559</mark> or on Telegram as <mark>@mechameryl</mark>. Please take a look at my photographic work on <a href="https://www.instagram.com/meryl.shoots/">Instagram</a>!
@@ -80,27 +80,33 @@
       It uses <a href="https://vitejs.dev/">Vite</a> as development and build tool and <a href="https://v3.vuejs.org/">Vue 3</a> as front-end framework. Pre-rendering allows flexibility and componentization while generating a lightweight static website.
     </p>
     <p class="text">
-      It should stay accessible, have a small footprint, and a simple and user-friendly development stack. It is currently hosted on <a href="https://render.com/">Render</a>, which updates it seamlessly through Github pushes.
+      It should stay accessible, have a small footprint, and a simple and user-friendly development stack. It is currently hosted on <a href="https://render.com/">Render</a>, which updates it seamlessly through <a href="https://github.com/njoqi/njoqi-vite">Github</a> pushes.
     </p>
   </article>
 
 </template>
 
 <script>
-  import { defineComponent } from 'vue';
+  import { defineComponent, ref } from 'vue';
   import { useHead } from '@vueuse/head';
   export default defineComponent({
     name: 'About',
     setup() {
+      const description = ref("Information about this website and its author.");
+
       useHead({
         title: "njoqi · About",
         meta: [
           {
             name: `description`,
-            content: "Information about this website and its author.",
+            content: description,
           }
         ]
       });
+
+      return {
+        description
+      }
     }
   });
 </script>

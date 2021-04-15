@@ -23,6 +23,9 @@ export default defineComponent({
         path: '/codex',
         name: 'Codex'
       }, {
+        path: '/articles',
+        name: 'Articles'
+      }, {
         path: '/about',
         name: 'About'
       }
@@ -53,12 +56,12 @@ export default defineComponent({
     display: flex;
     float: right;
     text-transform: lowercase;
-    font-size: $font-size-0;
+    font-size: $font-size--1;
     justify-content: space-around;
     margin: 0;
 
     @media screen and (min-width: $content-max-width) {
-      font-size: $font-size-0-max;
+      font-size: $font-size--1-max;
     }
   }
 
@@ -69,7 +72,12 @@ export default defineComponent({
   }
 
   .base-nav-item {
-    list-style: none;
+    list-style: none;border: 0.125em solid #1a2125;
+    border-right-width: 0;
+  }
+
+  .base-nav-item:last-child {
+    border-right-width: 0.125em;
   }
 
   .base-nav-link {

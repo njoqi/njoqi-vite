@@ -30,8 +30,8 @@ export default defineComponent({
 
   @font-face {
       font-family: 'Archia Web';
-      src: url('/assets/fonts/archia-regular-web.woff2') format('woff2'),
-          url('/assets/fonts/archia-regular-web.woff') format('woff');
+      src: url('/assets/fonts/archia-regular-subset.woff2') format('woff2'),
+          url('/assets/fonts/archia-regular-subset.woff') format('woff');
       font-weight: normal;
       font-style: normal;
   }
@@ -132,7 +132,7 @@ export default defineComponent({
     color: $color-text-secondary;
   }
 
-  a:not([href^='/']):not([href='']):not(.image-link):not(.mail-link):after {
+  a:not([href^='/']):not([href^='#']):not([href='']):not(.image-link):not(.mail-link):after {
     content:"°";
   }
 
@@ -249,6 +249,10 @@ export default defineComponent({
     margin-right: auto;
   }
 
+  .center {
+    text-align: center;
+  }
+
   .article-header {
     padding-bottom: 0.5em;
     margin-bottom: 3em;
@@ -279,7 +283,6 @@ export default defineComponent({
     content: "\2023";
     padding-left: 0.1em;
     padding-right: 0.4em;
-    transition: transform 0.1s;
   }
 
   .list-item:hover:before,

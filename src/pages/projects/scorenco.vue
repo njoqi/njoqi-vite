@@ -39,6 +39,9 @@
     <p class="text">
       Other tasks I completed include an update for the company logo and visual identity, providing guidelines to ensure coherent visuals ; and switching the project from Angular to React while updating the build processes.
     </p>
+    <p class="text">
+      <small>Note: the "Score n'co" brand, its design elements and contents are copyrighted by <a href="https://scorenco.com/">scorenco.com</a>.</small>
+    </p>
   </article>
 </template>
 
