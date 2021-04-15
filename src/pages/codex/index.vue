@@ -20,7 +20,7 @@
         <router-link to="/codex/design">Design</router-link>
       </li>
       <li class="list-item">
-        <router-link to="/codex/sustainable-living">Sustainable living</router-link>
+        <router-link to="/codex/sustainability">Sustainability</router-link>
       </li>
     </ul>
   </article>

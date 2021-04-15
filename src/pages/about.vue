@@ -45,7 +45,7 @@
       </li>
     </ul>
     <p class="text">
-      When I'm not jumping around in code, words, drawings and animated series, you can usually find me <router-link to="/codex/tea/">drinking tea</router-link>, taking a stroll, raising plants and/or taking <router-link to="/projects/photographie/">photos</router-link>.
+      When I'm not jumping around in code, words, drawings and animated series, you can usually find me <router-link to="/codex/tea">drinking tea</router-link>, taking a stroll, raising plants and/or taking <router-link to="/projects/photographie">photos</router-link>.
     </p>
     <p class="text">
       You can chat with me by mail at <mark><a href="mailto:hello@njoqi.me" class="mail-link">hello@njoqi.me</a></mark>, on Discord as <mark>Meryl#6559</mark> or on Telegram as <mark>@mechameryl</mark>. Please take a look at my photographic work on <a href="https://www.instagram.com/meryl.shoots/">Instagram</a>!
