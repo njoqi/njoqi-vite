@@ -33,6 +33,11 @@
         </a>
       </li>
       <li class="list-item">
+        <a href="https://societycentered.design/">
+          Society Centered Design
+        </a>
+      </li>
+      <li class="list-item">
         <a href="https://blog.grio.com/2016/03/5-essential-japanese-design-principles.html">
           5 essential japanese design principles
         </a>

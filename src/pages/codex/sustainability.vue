@@ -41,6 +41,11 @@
           homebrewserver.club
         </a>
       </li>
+      <li class="list-item">
+        <a href="https://openstructures.family/">
+          OpenStructures
+        </a>
+      </li>
     </ul>
   </article>
 
