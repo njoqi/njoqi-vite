@@ -4,17 +4,17 @@
   </nav>
   <footer class="base-footer" role="contentinfo">
     <p class="base-footer-copyright">
-      <small class="base-footer-text">
-        Set in <a href="http://atipofoundry.com/fonts/archia">Archia</a> and <a href="https://www.myfonts.com/fonts/sarid-ezra/augillion/">Augillion</a>.
-      </small>
+      <span class="base-footer-text">
+        <router-link to="/">Home</router-link> - <router-link to="/sitemap">Sitemap</router-link>
+      </span>
       <span class="base-footer-text base-footer-logo">
         <a class="base-footer-webring image-link" href="https://webring.xxiivv.com/" title="Part of the XXIIVV Webring">
           <img class="base-footer-webring-logo" alt="Webring logo" src="https://webring.xxiivv.com/icon.black.svg" />
         </a>
       </span>
-      <span class="base-footer-text">
-        <router-link to="/">Home</router-link> - <router-link to="/sitemap">Sitemap</router-link>
-      </span>
+      <small class="base-footer-text">
+        Set in <a href="http://atipofoundry.com/fonts/archia">Archia</a> and <a href="https://www.myfonts.com/fonts/sarid-ezra/augillion/">Augillion</a>.
+      </small>
     </p>
     <p class="text base-footer-text">
       <small>
@@ -38,7 +38,7 @@
 
   .base-return-top {
     font-size: $font-size--1;
-    margin: 1em;
+    margin: 2em;
 
     @media all and (min-width: $text-max-width) {
       font-size: $font-size--1-max;

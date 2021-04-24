@@ -31,7 +31,6 @@ export default defineComponent({
     font-size: $font-size-1;
     letter-spacing: 0.125em;
     margin: auto;
-    padding: 0.4em 0.4em;
     max-width: $content-max-width;
 
     @media screen and (min-width: $content-max-width) {
@@ -45,6 +44,7 @@ export default defineComponent({
 
   .base-header-top {
     background: $color-secondary;
+    padding: 0.4em 1em;
   }
 
   .base-header-link {

@@ -156,7 +156,7 @@ export default defineComponent({
     font-size: $font-size--1;
     vertical-align: middle;
     background: $color-secondary;
-    border: 0.25em solid $color-secondary;
+    border: 0.2em solid $color-secondary;
     display: inline-block;
     margin-top: -0.1em;
     padding: 0 0.3em;
@@ -166,6 +166,10 @@ export default defineComponent({
     @media screen and (min-width: $content-max-width) {
       font-size: $font-size--1-max;
     }
+  }
+
+  mark > a {
+    color: $color-text;
   }
 
   small {
@@ -220,7 +224,7 @@ export default defineComponent({
 
   .base-main {
     color: $color-text;
-    padding: 2em 1.5em 2em;
+    padding: 2em 1.5em;
     min-height: 50vh;
   }
 

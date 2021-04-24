@@ -42,42 +42,40 @@ export default defineComponent({
   
   .base-nav {
     padding: 0 1em;
-    max-width: 56rem;
+    max-width: $text-max-width;
     margin: 1em auto 2em;
   }
 
   @media all and (min-width: 42rem) {
     .base-nav {
-      padding: 0 2em;
+      padding: 0;
     }
   }
 
   .base-nav-list {
-    display: flex;
-    float: right;
     text-transform: lowercase;
     font-size: $font-size--1;
-    justify-content: space-around;
-    margin: 0;
+    margin: 0 2em;
 
     @media screen and (min-width: $content-max-width) {
       font-size: $font-size--1-max;
     }
-  }
 
-  .base-nav:after {
-    display: table;
-    content: " ";
-    clear: both;
+    @media screen and (min-width: $nav-min-width) {
+      display: flex;
+      justify-content: right;
+      flex-wrap: wrap;
+      border-right: 0.125em solid $color-text;
+    }
   }
 
   .base-nav-item {
-    list-style: none;border: 0.125em solid #1a2125;
-    border-right-width: 0;
-  }
+    list-style: none;
 
-  .base-nav-item:last-child {
-    border-right-width: 0.125em;
+    @media screen and (min-width: $nav-min-width) {
+      border: 0.125em solid $color-text;
+      border-right-width: 0;
+    }
   }
 
   .base-nav-link {
@@ -85,8 +83,13 @@ export default defineComponent({
     display: inline-block;
     text-decoration: none;
     letter-spacing: 0.05em;
-    padding: 0.5em 1em 0.3em;
     border-bottom: 0.2em solid transparent;
+    padding: 0.2em 0.5em 0.1em;
+    transition: background-color 0.1s;
+
+    @media screen and (min-width: $nav-min-width) {
+      padding: 0.5em 1em 0.3em;
+    }
   }
 
   .base-nav-link:hover,
