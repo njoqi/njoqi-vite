@@ -17,11 +17,13 @@
             Photographie
           </h2>
           <p class="projects-item-text">
-            <img 
-              src="/assets/images/projects/project-photographie.jpg"
-              alt="Photograph of animals"
-              height="560"
-              width="800" />
+            <span class="projects-item-image">
+              <img 
+                src="/assets/images/projects/project-photographie.png"
+                alt="Photograph of animals"
+                height="920"
+                width="460" />
+            </span>
             Selected photographic works.
           </p>
         </router-link>
@@ -32,11 +34,13 @@
               Carré Rose
             </h2>
             <p class="projects-item-text">
-              <img 
-                src="/assets/images/projects/project-carre-rose.jpg"
-                alt="Digital app screens"
-                height="560"
-                width="800" />
+              <span class="projects-item-image">
+                <img 
+                  src="/assets/images/projects/project-carre-rose.png"
+                  alt="Digital app screens"
+                  height="920"
+                  width="460" />
+              </span>
               Design for an adult movie label.
             </p>
         </router-link>
@@ -47,11 +51,13 @@
               Score n'co
             </h2>
             <p class="projects-item-text">
-              <img 
-                src="/assets/images/projects/project-scorenco.jpg"
-                alt="Digital app screens"
-                height="560"
-                width="800" />
+              <span class="projects-item-image">
+                <img 
+                  src="/assets/images/projects/project-scorenco.png"
+                  alt="Digital app screens"
+                  height="920"
+                  width="460" />
+              </span>
               Design and development for an online sports app.
             </p>
         </router-link>
@@ -62,11 +68,13 @@
               Earth/Noise
             </h2>
             <p class="projects-item-text">
-              <img 
-                src="/assets/images/projects/project-earth-noise.jpg"
-                alt="Illustration of a character"
-                height="560"
-                width="800" />
+              <span class="projects-item-image">
+                <img 
+                  src="/assets/images/projects/project-earth-noise.png"
+                  alt="Illustration of a character"
+                  height="920"
+                  width="460" />
+              </span>
               <abbr title="Climate fiction">Cli-fi</abbr> story about being part of this world.
             </p>
         </router-link>
@@ -161,5 +169,19 @@ export default defineComponent({
 
   .projects-item-text {
     line-height: 1.5em;
+  }
+
+  .projects-item-image {
+    display: block;
+    padding: 0.5em;
+    border: solid 1em $color-secondary;
+    text-align: center;
+    background: $color-secondary;
+    transition: background-color 0.1s;
+  }
+
+  .projects-item-link:hover .projects-item-image,
+  .projects-item-link:hover .projects-item-image {
+    background: $color-light;
   }
 </style>
