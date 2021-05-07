@@ -29,9 +29,9 @@
         </router-link>
       </li>
       <li class="projects-item">
-        <router-link to="/projects/carre-rose" class="projects-item-link">
+        <router-link to="/projects/carre-rose-films" class="projects-item-link">
             <h2 class="projects-item-title">
-              Carré Rose
+              Carré Rose Films
             </h2>
             <p class="projects-item-text">
               <span class="projects-item-image">

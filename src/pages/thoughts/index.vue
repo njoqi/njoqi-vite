@@ -1,30 +1,28 @@
 <template>
   <header class="article-header">
     <h1>
-      Articles
+      Thoughts
     </h1>
     <p class="text">
       {{ description }}
     </p>
   </header>
 
-  <article>
-    <p class="text">
-      Nothing for now... (the first article is being written!)
-    </p>
-  </article>
+  <p class="text">
+    Nothing to see here for now, but keep an eye out!
+  </p>
 </template>
 
 <script>
   import { defineComponent, ref } from 'vue';
   import { useHead } from '@vueuse/head';
   export default defineComponent({
-    name: 'Articles',
+    name: 'Thoughts',
     setup() {
-      const description = ref("Thoughts and explanations.");
+      const description = ref("Ideas, reflections and opinions.");
 
       useHead({
-        title: "njoqi · Articles",
+        title: "njoqi · Thoughts",
         meta: [
           {
             name: "description",

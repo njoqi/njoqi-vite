@@ -69,6 +69,16 @@
           Digital guide to low-tech
         </a>
       </li>
+      <li class="list-item">
+        <a href="https://orionmagazine.org/article/dark-ecology/">
+          Dark Ecology
+        </a>
+      </li>
+      <li class="list-item">
+        <a href="https://meanjin.com.au/essays/unearthed/">
+          Unearthed
+        </a>
+      </li>
     </ul>
   </article>
 

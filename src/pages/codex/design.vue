@@ -5,9 +5,9 @@
         Codex index
       </router-link>
     </nav>
-    <h2>
+    <h1>
       Design
-    </h2>
+    </h1>
     <p class="text">
       <mark>This page is being built.</mark>
     </p>
@@ -18,9 +18,9 @@
   </header>
 
   <article class="full-width">
-    <h3>
+    <h2>
       General
-    </h3>
+    </h2>
     <ul class="list">
       <li class="list-item">
         <a href="http://fadeyev.net/design/">
@@ -46,9 +46,9 @@
   </article>
 
   <article class="full-width">
-    <h3>
+    <h2>
       Web
-    </h3>
+    </h2>
     <ul class="list">
       <li class="list-item">
         <a href="https://bighack.org/">
@@ -59,9 +59,9 @@
   </article>
 
   <article class="full-width">
-    <h3>
+    <h2>
       Inspiration sources
-    </h3>
+    </h2>
     <ul class="list">
       <li class="list-item">
         <a href="https://www.spoon-tamago.com/">

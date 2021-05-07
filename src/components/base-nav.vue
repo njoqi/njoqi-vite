@@ -23,8 +23,8 @@ export default defineComponent({
         path: '/codex',
         name: 'Codex'
       }, {
-        path: '/articles',
-        name: 'Articles'
+        path: '/thoughts',
+        name: 'Thoughts'
       }, {
         path: '/about',
         name: 'About'

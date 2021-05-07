@@ -57,7 +57,6 @@ export default defineComponent({
     padding: 0;
     line-height: 1.5rem;
     font-size: $font-size-0;
-    letter-spacing: 0.065em;
     font-family: "Archia Web", sans-serif;
     color: $color-text;
     background: $color-light;
@@ -73,7 +72,7 @@ export default defineComponent({
   }
 
   h1 {
-    line-height: 1.125;
+    line-height: 1.2;
     font-weight: 400;
     font-size: $font-size-4;
     margin: 0.4em 0;
@@ -87,10 +86,11 @@ export default defineComponent({
   }
 
   h2 {
-    line-height: 1.125;
+    line-height: 1.2;
     font-weight: 400;
     font-size: $font-size-3;
     margin: 2.5em 0 0.5em;
+    letter-spacing: -0.0125em;
 
     @media screen and (min-width: $content-max-width) {
       font-size: $font-size-3-max;
@@ -152,7 +152,7 @@ export default defineComponent({
   }
 
   mark {
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
     font-size: $font-size--1;
     vertical-align: middle;
     background: $color-secondary;
@@ -271,7 +271,7 @@ export default defineComponent({
   .text,
   .descriptive-list,
   .list {
-    line-height: 1.8em;
+    line-height: 1.6em;
   }
 
   .list {

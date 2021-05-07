@@ -48,8 +48,8 @@
           url: "/projects/photographie/intervalles",
           name: "Projects / Photographie / Intervalles"
         }, {
-          url: "/carre-rose",
-          name: "Projects / Carré Rose"
+          url: "/carre-rose-films",
+          name: "Projects / Carré Rose Films"
         }, {
           url: "/scorenco",
           name: "Projects / Score n'co"
@@ -72,8 +72,8 @@
           url: "/codex/tea",
           name: "Codex / Tea"
         }, {
-          url: "/articles",
-          name: "Articles"
+          url: "/thoughts",
+          name: "Thoughts"
         }, {
           url: "/about",
           name: "About"

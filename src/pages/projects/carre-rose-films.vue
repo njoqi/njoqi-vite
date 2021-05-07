@@ -7,19 +7,19 @@
         </router-link>
       </nav>
       <h1>
-        Carré Rose
+        Carré Rose Films
       </h1>
       <p class="text">
         {{ description }}
       </p>
     </header>
     <p class="text">
-      <a href="https://carrerosefilms.com/en/">Carré Rose</a> (Pink Square) is an adult cinema label based in France. It focuses on producing quality content with high standards regarding performers wellbeing, cast and practices diversity, and feminist values.
+      <a href="https://carrerosefilms.com/en/">Carré Rose Films</a> (Pink Square Movies) is an adult cinema label based in France. It focuses on producing quality content with high standards regarding performers wellbeing, cast and practices diversity, and feminist values.
     </p>
     <p class="text">
       <img
         src="/assets/images/projects/carre-rose.jpg"
-        alt="Carré Rose website homepage"
+        alt="Carré Rose Films website homepage"
         height="846"
         width="1400">
     </p>
@@ -29,7 +29,7 @@
     <p class="text">
       <img
         src="/assets/images/projects/carre-rose-2.jpg"
-        alt="Carré Rose logo and colour swatch, next to a preview of its mobile website templates"
+        alt="Carré Rose Films logo and colour swatch, next to a preview of its mobile website templates"
         height="841"
         width="1400">
     </p>
@@ -39,7 +39,7 @@
     <p class="text">
       <img
         src="/assets/images/projects/carre-rose-3.jpg"
-        alt="Carré Rose posters for two movies, The Ad and Guacamole" 
+        alt="Carré Rose Films posters for two movies, The Ad and Guacamole" 
         height="841"
         width="1400">
     </p>
@@ -53,12 +53,12 @@
   import { defineComponent, ref } from 'vue';
   import { useHead } from '@vueuse/head';
   export default defineComponent({
-    name: 'CarreRose',
+    name: 'CarreRoseFilms',
     setup() {
       const description = ref("Design for an adult movie label.");
 
       useHead({
-        title: "njoqi · Carré Rose",
+        title: "njoqi · Carré Rose Films",
         meta: [
           {
             name: "description",
