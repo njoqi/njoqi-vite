@@ -58,7 +58,6 @@ export default defineComponent({
       flex-wrap: wrap;
       flex-direction: row;
       justify-content: right;
-      border-right: 0.175rem solid $color-text;
     }
   }
 
@@ -68,17 +67,21 @@ export default defineComponent({
     list-style: none;
     margin: 0;
     border: 0.175rem solid $color-text;
-    border-bottom-style: hidden;
+    border-bottom-style: none;
 
     @media screen and (min-width: $nav-min-width) {
       width: auto;
       border-bottom-style: solid;
-      border-right-style: hidden;
+      border-right-style: none;
     }
   }
 
   .base-nav-item:last-child {
     border-bottom-style: solid;
+
+    @media screen and (min-width: $nav-min-width) {
+      border-right-style: solid;
+    }
   }
 
   .base-nav-item:before {
@@ -97,11 +100,13 @@ export default defineComponent({
   .base-nav-link:hover,
   .base-nav-link:active {
     background-color: $color-secondary;
+    box-shadow: 0 0 0 0.02em $color-secondary;
     color: $color-text;
   }
 
   .base-nav-link--current {
     background-color: $color-text;
+    box-shadow: 0 0 0 1px $color-text;
     color: $color-light;
   }
 </style>
