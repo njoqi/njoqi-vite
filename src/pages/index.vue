@@ -20,10 +20,27 @@
               <img 
                 src="/assets/images/projects/project-photographie.png"
                 alt=""
-                height="920"
-                width="460" />
+                height="460"
+                width="920" />
             </span>
             Selected photographic works.
+          </p>
+        </router-link>
+      </li>
+      <li class="projects-item">
+        <router-link to="/projects/illustration" class="projects-item-link">
+          <h2 class="projects-item-title">
+            Illustration
+          </h2>
+          <p class="projects-item-text">
+            <span class="projects-item-image">
+              <img 
+                src="/assets/images/projects/project-illustration.png"
+                alt=""
+                height="460"
+                width="920" />
+            </span>
+            Selected illustrative works.
           </p>
         </router-link>
       </li>
@@ -37,8 +54,8 @@
                 <img 
                   src="/assets/images/projects/project-carre-rose.png"
                   alt=""
-                  height="920"
-                  width="460" />
+                  height="460"
+                  width="920" />
               </span>
               Design for an adult movie label.
             </p>
@@ -54,8 +71,8 @@
                 <img 
                   src="/assets/images/projects/project-scorenco.png"
                   alt=""
-                  height="920"
-                  width="460" />
+                  height="460"
+                  width="920" />
               </span>
               Design and development for an online sports app.
             </p>
@@ -71,8 +88,8 @@
                 <img 
                   src="/assets/images/projects/project-earth-noise.png"
                   alt=""
-                  height="920"
-                  width="460" />
+                  height="460"
+                  width="920" />
               </span>
               <abbr title="Climate fiction">Cli-fi</abbr> story about being part of this world.
             </p>
@@ -127,7 +144,7 @@ useHead({
 
   .projects-item {
     list-style: none;
-    margin-bottom: 3em;
+    margin: 0.25em 0 3em;
   }
 
   .projects-item:before {
@@ -172,6 +189,7 @@ useHead({
     margin-bottom: 0.5em;
     border: 0.175rem solid $color-text;
     text-align: center;
+    line-height: 1;
     background: $color-secondary;
     transition: background-color 0.1s;
   }
