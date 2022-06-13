@@ -72,9 +72,6 @@
           url: "/codex/tea",
           name: "Codex / Tea"
         }, {
-          url: "/thoughts",
-          name: "Thoughts"
-        }, {
           url: "/about",
           name: "About"
         }, {

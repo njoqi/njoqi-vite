@@ -1,87 +1,87 @@
 
 // Content width
 $text-max-width: 980px;
+$text-max-width-unitless: 980;
 $content-max-width: 1200px;
-$content-max-width-unitless: 980;
 
-$nav-min-width: 440px;
+$nav-min-width: 26em;
 
 
 // Typography generated through the Utopia type calculator
 // @link https://utopia.fyi/type/calculator?c=320,17,1.2,980,24,1.2,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l
 
 $font-size--2: calc(
-  ((11.81 / 16) * 1rem) + (15.28 - 11.81) * calc((100vw - 320 / 16 * 1rem) / (#{$content-max-width-unitless} - 320))
+  ((11.81 / 16) * 1rem) + (15.28 - 11.81) * calc((100vw - 320 / 16 * 1rem) / (#{$text-max-width-unitless} - 320))
 );
 
 $font-size--1: calc(
-  ((14.17 / 16) * 1rem) + (18.33 - 14.17) * calc((100vw - 320 / 16 * 1rem) / (#{$content-max-width-unitless} - 320))
+  ((14.17 / 16) * 1rem) + (18.33 - 14.17) * calc((100vw - 320 / 16 * 1rem) / (#{$text-max-width-unitless} - 320))
 );
 
 $font-size-0: calc(
-  ((17.00 / 16) * 1rem) + (22.00 - 17.00) * calc((100vw - 320 / 16 * 1rem) / (#{$content-max-width-unitless} - 320))
+  ((17.00 / 16) * 1rem) + (22.00 - 17.00) * calc((100vw - 320 / 16 * 1rem) / (#{$text-max-width-unitless} - 320))
 );
 
 $font-size-1: calc(
-  ((20.40 / 16) * 1rem) + (26.40 - 20.40) * calc((100vw - 320 / 16 * 1rem) / (#{$content-max-width-unitless} - 320))
+  ((20.40 / 16) * 1rem) + (26.40 - 20.40) * calc((100vw - 320 / 16 * 1rem) / (#{$text-max-width-unitless} - 320))
 );
 
 $font-size-2: calc(
-  ((24.48 / 16) * 1rem) + (31.68 - 24.48) * calc((100vw - 320 / 16 * 1rem) / (#{$content-max-width-unitless} - 320))
+  ((24.48 / 16) * 1rem) + (31.68 - 24.48) * calc((100vw - 320 / 16 * 1rem) / (#{$text-max-width-unitless} - 320))
 );
 
 $font-size-3: calc(
-  ((29.38 / 16) * 1rem) + (38.02 - 29.38) * calc((100vw - 320 / 16 * 1rem) / (#{$content-max-width-unitless} - 320))
+  ((29.38 / 16) * 1rem) + (38.02 - 29.38) * calc((100vw - 320 / 16 * 1rem) / (#{$text-max-width-unitless} - 320))
 );
 
 $font-size-4: calc(
-  ((35.25 / 16) * 1rem) + (45.62 - 35.25) * calc((100vw - 320 / 16 * 1rem) / (#{$content-max-width-unitless} - 320))
+  ((35.25 / 16) * 1rem) + (45.62 - 35.25) * calc((100vw - 320 / 16 * 1rem) / (#{$text-max-width-unitless} - 320))
 );
 
 $font-size-5 : calc(
-  ((42.30 / 16) * 1rem) + (54.74 - 42.30) * calc((100vw - 320 / 16 * 1rem) / (#{$content-max-width-unitless} - 320))
+  ((42.30 / 16) * 1rem) + (54.74 - 42.30) * calc((100vw - 320 / 16 * 1rem) / (#{$text-max-width-unitless} - 320))
 );
 
 $font-size--2-max: calc(
-    ((11.81 / 16) * 1rem) + (15.28 - 11.81) * calc((#{$content-max-width} - 320 / 16 * 1rem) / (#{$content-max-width-unitless} - 320))
+    ((11.81 / 16) * 1rem) + (15.28 - 11.81) * calc((#{$text-max-width} - 320 / 16 * 1rem) / (#{$text-max-width-unitless} - 320))
   );
 
 $font-size--1-max: calc(
-    ((14.17 / 16) * 1rem) + (18.33 - 14.17) * calc((#{$content-max-width} - 320 / 16 * 1rem) / (#{$content-max-width-unitless} - 320))
+    ((14.17 / 16) * 1rem) + (18.33 - 14.17) * calc((#{$text-max-width} - 320 / 16 * 1rem) / (#{$text-max-width-unitless} - 320))
   );
 
 $font-size-0-max: calc(
-    ((17.00 / 16) * 1rem) + (22.00 - 17.00) * calc((#{$content-max-width} - 320 / 16 * 1rem) / (#{$content-max-width-unitless} - 320))
+    ((17.00 / 16) * 1rem) + (22.00 - 17.00) * calc((#{$text-max-width} - 320 / 16 * 1rem) / (#{$text-max-width-unitless} - 320))
   );
 
 $font-size-1-max: calc(
-    ((20.40 / 16) * 1rem) + (26.40 - 20.40) * calc((#{$content-max-width} - 320 / 16 * 1rem) / (#{$content-max-width-unitless} - 320))
+    ((20.40 / 16) * 1rem) + (26.40 - 20.40) * calc((#{$text-max-width} - 320 / 16 * 1rem) / (#{$text-max-width-unitless} - 320))
   );
 
 
 $font-size-2-max: calc(
-    ((24.48 / 16) * 1rem) + (31.68 - 24.48) * calc((#{$content-max-width} - 320 / 16 * 1rem) / (#{$content-max-width-unitless} - 320))
+    ((24.48 / 16) * 1rem) + (31.68 - 24.48) * calc((#{$text-max-width} - 320 / 16 * 1rem) / (#{$text-max-width-unitless} - 320))
   );
 
 
 $font-size-3-max: calc(
-    ((29.38 / 16) * 1rem) + (38.02 - 29.38) * calc((#{$content-max-width} - 320 / 16 * 1rem) / (#{$content-max-width-unitless} - 320))
+    ((29.38 / 16) * 1rem) + (38.02 - 29.38) * calc((#{$text-max-width} - 320 / 16 * 1rem) / (#{$text-max-width-unitless} - 320))
   );
 
 
 $font-size-4-max: calc(
-    ((35.25 / 16) * 1rem) + (45.62 - 35.25) * calc((#{$content-max-width} - 320 / 16 * 1rem) / (#{$content-max-width-unitless} - 320))
+    ((35.25 / 16) * 1rem) + (45.62 - 35.25) * calc((#{$text-max-width} - 320 / 16 * 1rem) / (#{$text-max-width-unitless} - 320))
   );
 
 
 $font-size-5-max: calc(
-    ((42.30 / 16) * 1rem) + (54.74 - 42.30) * calc((#{$content-max-width} - 320 / 16 * 1rem) / (#{$content-max-width-unitless} - 320))
+    ((42.30 / 16) * 1rem) + (54.74 - 42.30) * calc((#{$text-max-width} - 320 / 16 * 1rem) / (#{$text-max-width-unitless} - 320))
   );
 
 
 // Colours
 $color-text: #261307;
 $color-text-secondary: #D12D00;
-$color-light: #FFF2E5;
+$color-light: #fff6ed;
 $color-light-shadow: #EBE0CE;
 $color-secondary: #FFD438;

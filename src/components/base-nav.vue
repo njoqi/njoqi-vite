@@ -10,7 +10,7 @@
   </nav>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent } from 'vue';
 export default defineComponent({
   name: "BaseNav",
@@ -22,9 +22,6 @@ export default defineComponent({
       }, {
         path: '/codex',
         name: 'Codex'
-      }, {
-        path: '/thoughts',
-        name: 'Thoughts'
       }, {
         path: '/about',
         name: 'About'
@@ -41,64 +38,70 @@ export default defineComponent({
   @import "src/components/_variables.scss";
   
   .base-nav {
-    padding: 0 1em;
-    max-width: $text-max-width;
-    margin: 1em auto 2em;
-  }
-
-  @media all and (min-width: 42rem) {
-    .base-nav {
-      padding: 0;
-    }
+    padding: 0 1.5em;
+    max-width: $content-max-width;
+    margin: 1em auto;
   }
 
   .base-nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     text-transform: lowercase;
     font-size: $font-size--1;
-    margin: 0 2em;
 
     @media screen and (min-width: $content-max-width) {
       font-size: $font-size--1-max;
     }
 
     @media screen and (min-width: $nav-min-width) {
-      display: flex;
-      justify-content: right;
       flex-wrap: wrap;
-      border-right: 0.125em solid $color-text;
+      flex-direction: row;
+      justify-content: right;
+      border-right: 0.175rem solid $color-text;
     }
   }
 
   .base-nav-item {
+    display: inline-flex;
+    width: 8em;
     list-style: none;
+    margin: 0;
+    border: 0.175rem solid $color-text;
+    border-bottom-style: hidden;
 
     @media screen and (min-width: $nav-min-width) {
-      border: 0.125em solid $color-text;
-      border-right-width: 0;
+      width: auto;
+      border-bottom-style: solid;
+      border-right-style: hidden;
     }
   }
 
+  .base-nav-item:last-child {
+    border-bottom-style: solid;
+  }
+
+  .base-nav-item:before {
+    content: none;
+  }
+
   .base-nav-link {
-    color: #1a2125;
-    display: inline-block;
+    color: $color-text;
+    flex-grow: 1;
     text-decoration: none;
     letter-spacing: 0.05em;
-    border-bottom: 0.2em solid transparent;
-    padding: 0.2em 0.5em 0.1em;
+    padding: 0.4em 0.6em 0.3em;
     transition: background-color 0.1s;
-
-    @media screen and (min-width: $nav-min-width) {
-      padding: 0.5em 1em 0.3em;
-    }
   }
 
   .base-nav-link:hover,
   .base-nav-link:active {
-    background-color: #FFD438;
-    color: #1a2125;
+    background-color: $color-secondary;
+    color: $color-text;
   }
 
   .base-nav-link--current {
-    border-color: #1a2125;
+    background-color: $color-text;
+    color: $color-light;
   }
 </style>

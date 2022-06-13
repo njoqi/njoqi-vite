@@ -6,8 +6,7 @@
       </h1>
       <p class="text">
         Welcome to my humble place. I'm Flynn, I make and learn things.
-        Rest around the fire and take a look at things I want to record, display and share.
-        Most are ongoing projects. Last updated: <mark>{{ lastUpdated }}</mark>
+        Rest around the fire and take a look at what I want to record, display and share. Last updated: <mark>{{ lastUpdated }}</mark>
       </p>
     </header>
     <ul class="projects">
@@ -20,7 +19,7 @@
             <span class="projects-item-image">
               <img 
                 src="/assets/images/projects/project-photographie.png"
-                alt="Photograph of animals"
+                alt=""
                 height="920"
                 width="460" />
             </span>
@@ -37,7 +36,7 @@
               <span class="projects-item-image">
                 <img 
                   src="/assets/images/projects/project-carre-rose.png"
-                  alt="Digital app screens"
+                  alt=""
                   height="920"
                   width="460" />
               </span>
@@ -54,7 +53,7 @@
               <span class="projects-item-image">
                 <img 
                   src="/assets/images/projects/project-scorenco.png"
-                  alt="Digital app screens"
+                  alt=""
                   height="920"
                   width="460" />
               </span>
@@ -71,7 +70,7 @@
               <span class="projects-item-image">
                 <img 
                   src="/assets/images/projects/project-earth-noise.png"
-                  alt="Illustration of a character"
+                  alt=""
                   height="920"
                   width="460" />
               </span>
@@ -83,45 +82,38 @@
   </article>
 </template>
 
-<script>
+<script setup>
 import { ref, defineComponent } from 'vue';
 import { useHead } from '@vueuse/head';
-export default defineComponent({
-  name: "Home",
-  setup() {
-    const months = [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December"
-    ];
-    const todayTimestamp = Date.now();
-    const today = new Date(todayTimestamp);
-    const [todayMonth, todayDate, todayYear] = today.toLocaleDateString("en-US").split("/");
-    const lastUpdated = ref(todayDate + " " + months[todayMonth - 1] + " " + todayYear);
-    const description = ref("Things I want to record, display and share.");
 
-    useHead({
-      title: "Home",
-      meta: [
-        {
-          name: "njoqi · Projects",
-          content: description,
-        }
-      ]
-    });
-    return {
-      lastUpdated
-    };
-  }
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+];
+const todayTimestamp = Date.now();
+const today = new Date(todayTimestamp);
+const [todayMonth, todayDate, todayYear] = today.toLocaleDateString("en-US").split("/");
+const lastUpdated = ref(todayDate + " " + months[todayMonth - 1] + " " + todayYear);
+const description = ref("Things I want to record, display and share.");
+
+useHead({
+  title: "njoqi · Projects",
+  meta: [
+    {
+      name: "description",
+      content: description,
+    }
+  ]
 });
 </script>
 
@@ -131,12 +123,15 @@ export default defineComponent({
   .projects {
     display: flex;
     flex-wrap: wrap;
-    max-width: $content-max-width;
   }
 
   .projects-item {
     list-style: none;
     margin-bottom: 3em;
+  }
+
+  .projects-item:before {
+    content: none;
   }
 
   @media all and (min-width: 38rem) {
@@ -174,7 +169,8 @@ export default defineComponent({
   .projects-item-image {
     display: block;
     padding: 0.5em;
-    border: solid 1em $color-secondary;
+    margin-bottom: 0.5em;
+    border: 0.175rem solid $color-text;
     text-align: center;
     background: $color-secondary;
     transition: background-color 0.1s;

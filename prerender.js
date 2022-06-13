@@ -1,5 +1,5 @@
 // Pre-render the app into static HTML.
-// run `npm generate` and then `dist` can be served as a static site.
+// Use `npm run build` and then `dist` can be served as a static site.
 
 const fs = require('fs');
 const path = require('path');
@@ -35,7 +35,7 @@ const [nameBase, nameHash] = serverFile.split('.');
 const routesToPrerender = recursiveReaddir(toAbsolute('src/pages'))
   .map((file) => {
     const [_, name] = file
-      .replace(/\.vue$/, '')
+      .replace(/\.(?:vue|md)$/, '')
       .replace(/\\/g, '/')
       .toLowerCase()
       .split('pages/');
@@ -49,6 +49,7 @@ const routesToPrerender = recursiveReaddir(toAbsolute('src/pages'))
 ;(async () => {
   // Pre-render each route
   for (const url of routesToPrerender) {
+    // Log which route is rendering
     console.log('Prerendering ' + url);
     const appHtml = await render("/" + (url === "index" ? "" : url));
 

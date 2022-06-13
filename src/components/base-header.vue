@@ -3,7 +3,7 @@
     <div class="base-header-top">
       <p class="base-header-home">
         <router-link class="base-header-link" to="/">
-          <img class="base-header-logo" src="/assets/logo.png" alt="njoqi logo" />
+          <img class="base-header-logo" src="/assets/logo.svg" alt="Logo" height="200" width="200" />
           njoqi
         </router-link>
       </p>
@@ -31,20 +31,16 @@ export default defineComponent({
     font-size: $font-size-1;
     letter-spacing: 0.125em;
     margin: auto;
-    max-width: $content-max-width;
 
     @media screen and (min-width: $content-max-width) {
       font-size: $font-size-1-max;
     }
   }
 
-  .base-header {
-    padding-bottom: 1em;
-  }
-
   .base-header-top {
     background: $color-secondary;
-    padding: 0.4em 1em;
+    padding: 0.4em 1.5em;
+    border-bottom: 0.175rem solid $color-text;
   }
 
   .base-header-link {
@@ -61,11 +57,10 @@ export default defineComponent({
   }
 
   .base-header-logo {
-    width: 2em;
+    width: 2.4em;
     padding: 0.2em;
     margin-right: 0.25em;
     line-height: 1.5em;
     vertical-align: middle;
-    border-radius: 50%;
   }
 </style>
