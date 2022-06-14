@@ -14,7 +14,7 @@
       </p>
     </header>
     <p class="text">
-      <a href="https://scorenco.com/">Score n'co</a> is a french online platform providing up-to-date information about championships results and rankings at all competitive and amateur levels, across 10 sports. Its website and its mobile app also allow users (fans and clubs) to comment and update events of their favorite teams in real time.
+      <a href="https://scorenco.com/">Score n'co</a> is a French online platform providing up-to-date information about championships results and rankings at all competitive and amateur levels, across 10 sports. Its website and its mobile app also allow users (fans and clubs) to comment and update their favorite teams' events in real time.
     </p>
     <p class="text">
       <img
@@ -27,7 +27,7 @@
       I joined Score n'co early on, as the company was still creating its main product. My initial mission was to provide graphic design guidance and create visuals for the company's blog and social media, but it quickly became broader. I helped (re)design all the pages of the website, then translate its contents into the mobiles apps while applying the iOS and Android guidelines.
     </p>
     <p class="text">
-      The ownership of the front-end development was gradually transferred to me, and I developed new pages and features for the website (and the mobile app using webviews). Improving the overall code quality and web performances was an objective as well.
+      The ownership of the front-end development was gradually transferred to me, and I developed new pages and features for the website (as well as the mobile app, using webviews). This allowed me to improve the overall code quality and web performance.
     </p>
     <p class="text">
       <img
@@ -37,7 +37,7 @@
         width="1400">
     </p>
     <p class="text">
-      Other tasks I completed include an update for the company logo and visual identity, providing guidelines to ensure coherent visuals ; and switching the project from Angular to React while updating the build processes.
+      Other tasks I completed include an update for the company logo and visual identity, providing guidelines to ensure coherent visuals; and switching the project from Angular to React while updating the build processes.
     </p>
     <p class="text">
       <small>Note: the "Score n'co" brand, its design elements and contents are copyrighted by <a href="https://scorenco.com/">scorenco.com</a>.</small>

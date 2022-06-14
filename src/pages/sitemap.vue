@@ -48,6 +48,9 @@
           url: "/projects/photographie/intervalles",
           name: "Projects / Photographie / Intervalles"
         }, {
+          url: "/illustration",
+          name: "Projects / Illustration"
+        }, {
           url: "/carre-rose-films",
           name: "Projects / Carré Rose Films"
         }, {

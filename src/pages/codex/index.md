@@ -18,7 +18,7 @@ meta:
 ## Knowledge
 
 - <router-link to="/codex/design">Design</router-link>
-- <router-link to="/codex/sustainabilty">Sustainability</router-link>
+- <router-link to="/codex/sustainability">Sustainability</router-link>
 
 ## Logs
 
