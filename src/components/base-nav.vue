@@ -38,9 +38,7 @@ export default defineComponent({
   @import "src/components/_variables.scss";
   
   .base-nav {
-    padding: 0 1.5em;
-    max-width: $content-max-width;
-    margin: 1em auto;
+    padding-left: 1em;
   }
 
   .base-nav-list {
@@ -50,7 +48,7 @@ export default defineComponent({
     text-transform: lowercase;
     font-size: $font-size--1;
 
-    @media screen and (min-width: $content-max-width) {
+    @media screen and (min-width: $text-max-width) {
       font-size: $font-size--1-max;
     }
 

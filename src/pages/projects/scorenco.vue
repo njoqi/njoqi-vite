@@ -3,7 +3,7 @@
     <header class="article-header">
       <nav class="text">
         <router-link to="/">
-            Projects index
+          ← Projects index
         </router-link>
       </nav>
       <h1>

@@ -3,7 +3,7 @@
     <header class="article-header">
       <nav class="text">
         <router-link to="/projects/photographie">
-            Photographie index
+          ← Photographie index
         </router-link>
       </nav>
       <h1>
@@ -14,30 +14,20 @@
       </p>
     </header>
     <ul class="list">
-      <li>
-        <p class="image photograph">
-          <img src="/assets/images/projects/photographie/intervalles/05.jpg" height="805" width="1400">
-        </p>
+      <li class="image photograph">
+        <img src="/assets/images/projects/photographie/intervalles/05.jpg" height="805" width="1400">
       </li>
-      <li>
-        <p class="image photograph">
-          <img src="/assets/images/projects/photographie/intervalles/04.jpg" height="1200" width="1200">
-        </p>
+      <li class="image photograph">
+        <img src="/assets/images/projects/photographie/intervalles/04.jpg" height="1200" width="1200">
       </li>
-      <li>
-        <p class="image photograph">
-          <img src="/assets/images/projects/photographie/intervalles/03.jpg" loading="lazy" height="805" width="1400">
-        </p>
+      <li class="image photograph">
+        <img src="/assets/images/projects/photographie/intervalles/03.jpg" loading="lazy" height="805" width="1400">
       </li>
-      <li>
-        <p class="image photograph">
-          <img src="/assets/images/projects/photographie/intervalles/02.jpg" loading="lazy" height="1200" width="1200">
-        </p>
+      <li class="image photograph">
+        <img src="/assets/images/projects/photographie/intervalles/02.jpg" loading="lazy" height="1200" width="1200">
       </li>
-      <li>
-        <p class="image photograph">
-          <img src="/assets/images/projects/photographie/intervalles/01.jpg" loading="lazy" height="805" width="1400">
-        </p>
+      <li class="image photograph">
+        <img src="/assets/images/projects/photographie/intervalles/01.jpg" loading="lazy" height="805" width="1400">
       </li>
     </ul>
   </article>

@@ -8,7 +8,7 @@ meta:
 
 <p>
   <router-link to="/codex">
-    Codex index
+    ← Codex index
   </router-link>
 </p>
 

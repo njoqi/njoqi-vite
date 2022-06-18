@@ -16,7 +16,7 @@
     background: $color-light;
     letter-spacing: 0.02em;
 
-    @media screen and (min-width: $content-max-width) {
+    @media screen and (min-width: $text-max-width) {
       font-size: $font-size-0-max;
     }
   }
@@ -34,7 +34,7 @@
     font-family: "Augillion Web", "Times New Roman", serif;
     letter-spacing: 0.008em;
 
-    @media screen and (min-width: $content-max-width) {
+    @media screen and (min-width: $text-max-width) {
       font-size: $font-size-4-max;
     }
   }
@@ -46,7 +46,7 @@
     margin: 2.5em 0 0.5em;
     // letter-spacing: -0.0125em;
 
-    @media screen and (min-width: $content-max-width) {
+    @media screen and (min-width: $text-max-width) {
       font-size: $font-size-3-max;
     }
   }
@@ -56,7 +56,7 @@
     font-size: $font-size-2;
     margin: 2em 0 0.5em;
 
-    @media screen and (min-width: $content-max-width) {
+    @media screen and (min-width: $text-max-width) {
       font-size: $font-size-2-max;
     }
   }
@@ -118,7 +118,7 @@
     line-height: 1.45em;
     border-radius: 0.3em;
 
-    @media screen and (min-width: $content-max-width) {
+    @media screen and (min-width: $text-max-width) {
       font-size: $font-size--1-max;
     }
   }
@@ -131,7 +131,7 @@
     font-size: $font-size--1;
     line-height: 1.4em;
 
-    @media screen and (min-width: $content-max-width) {
+    @media screen and (min-width: $text-max-width) {
       font-size: $font-size--1-max;
     }
   }
@@ -147,7 +147,7 @@
     padding: 0 0.3em;
     line-height: 1.45em;
 
-    @media screen and (min-width: $content-max-width) {
+    @media screen and (min-width: $text-max-width) {
       font-size: $font-size--1-max;
     }
   }
@@ -165,7 +165,7 @@
     border: 0.2em solid $color-text-secondary;
     border-radius: 1em;
 
-    @media screen and (min-width: $content-max-width) {
+    @media screen and (min-width: $text-max-width) {
       font-size: $font-size--1-max;
     }
   }
@@ -180,13 +180,13 @@
 
   .base-main {
     color: $color-text;
-    padding: 1em 1.5em 2em;
+    padding: 1.5em 1.5em 2em;
     min-height: 50vh;
   }
 
   @media all and (min-width: 34rem) {
     .base-main {
-      padding: 1em 2em 4em;
+      padding: 2em 2em 4em;
     }
   }
 

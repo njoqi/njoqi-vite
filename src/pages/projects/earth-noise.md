@@ -8,7 +8,7 @@ meta:
 
 <p>
   <router-link to="/">
-    Projects index
+    ← Projects index
   </router-link>
 </p>
 

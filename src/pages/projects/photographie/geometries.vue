@@ -3,7 +3,7 @@
     <header class="article-header">
       <nav class="text">
         <router-link to="/projects/photographie">
-            Photographie index
+          ← Photographie index
         </router-link>
       </nav>
       <h1>
@@ -14,45 +14,29 @@
       </p>
     </header>
     <ul class="list">
-      <li>
-        <p class="image photograph">
-          <img src="/assets/images/projects/photographie/geometries/08.jpg" height="1400" width="1400">
-        </p>
+      <li class="image photograph">
+        <img src="/assets/images/projects/photographie/geometries/08.jpg" height="1400" width="1400">
       </li>
-      <li>
-        <p class="image photograph">
-          <img src="/assets/images/projects/photographie/geometries/07.jpg" height="1201" width="1600">
-        </p>
+      <li class="image photograph">
+        <img src="/assets/images/projects/photographie/geometries/07.jpg" height="1201" width="1600">
       </li>
-      <li>
-        <p class="image photograph">
-          <img src="/assets/images/projects/photographie/geometries/06.jpg" loading="lazy" height="1201" width="1600">
-        </p>
+      <li class="image photograph">
+        <img src="/assets/images/projects/photographie/geometries/06.jpg" loading="lazy" height="1201" width="1600">
       </li>
-      <li>
-        <p class="image photograph">
-          <img src="/assets/images/projects/photographie/geometries/05.jpg" loading="lazy" height="1600" width="1201">
-        </p>
+      <li class="image photograph">
+        <img src="/assets/images/projects/photographie/geometries/05.jpg" loading="lazy" height="1600" width="1201">
       </li>
-      <li>
-        <p class="image photograph">
-          <img src="/assets/images/projects/photographie/geometries/04.jpg" loading="lazy" height="920" width="1600">
-        </p>
+      <li class="image photograph">
+        <img src="/assets/images/projects/photographie/geometries/04.jpg" loading="lazy" height="920" width="1600">
       </li>
-      <li>
-        <p class="image photograph">
-          <img src="/assets/images/projects/photographie/geometries/03.jpg" loading="lazy" height="920" width="1600">
-        </p>
+      <li class="image photograph">
+        <img src="/assets/images/projects/photographie/geometries/03.jpg" loading="lazy" height="920" width="1600">
       </li>
-      <li>
-        <p class="image photograph">
-          <img src="/assets/images/projects/photographie/geometries/02.jpg" loading="lazy" height="920" width="1600">
-        </p>
+      <li class="image photograph">
+        <img src="/assets/images/projects/photographie/geometries/02.jpg" loading="lazy" height="920" width="1600">
       </li>
-      <li>
-        <p class="image photograph">
-          <img src="/assets/images/projects/photographie/geometries/01.jpg" loading="lazy" height="840" width="1600">
-        </p>
+      <li class="image photograph">
+        <img src="/assets/images/projects/photographie/geometries/01.jpg" loading="lazy" height="840" width="1600">
       </li>
     </ul>
   </article>
