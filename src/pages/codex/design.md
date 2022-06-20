@@ -12,10 +12,6 @@ meta:
   </router-link>
 </p>
 
-<script setup>
-  import ArticleHeader from '../../components/article-header.vue'
-</script>
-
 <article-header v-bind="frontmatter" />
 
 > “One could describe Design as a plan for arranging elements to accomplish a particular purpose.” <cite>Charles Eames</cite>
@@ -44,3 +40,7 @@ meta:
 - [Identity Designed](https://identitydesigned.com/)
 - [UX Collective](https://uxdesign.cc/)
 - [Creative Boom](https://www.creativeboom.com/)
+
+<script setup>
+  import ArticleHeader from '../../components/article-header.vue'
+</script>

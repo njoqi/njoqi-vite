@@ -25,14 +25,6 @@
   </footer>
 </template>
 
-<script>
-  import { defineComponent } from 'vue';
-
-  export default defineComponent({
-    name: "BaseFooter"
-  });
-</script>
-
 <style lang="scss">
   @import "src/components/_variables.scss";
 

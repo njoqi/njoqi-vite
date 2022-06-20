@@ -10,28 +10,19 @@
   </nav>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-export default defineComponent({
-  name: "BaseNav",
-  setup() {
-    const routeList = [
-      {
-        path: '/',
-        name: 'Projects'
-      }, {
-        path: '/codex',
-        name: 'Codex'
-      }, {
-        path: '/about',
-        name: 'About'
-      }
-    ];
-    return {
-      routeList
-    };
-  }
-});
+<script setup lang="ts">
+  const routeList = [
+    {
+      path: '/',
+      name: 'Projects'
+    }, {
+      path: '/codex',
+      name: 'Codex'
+    }, {
+      path: '/about',
+      name: 'About'
+    }
+  ];
 </script>
 
 <style lang="scss">

@@ -12,15 +12,8 @@
   </header>
 </template>
 
-<script>
-import { defineComponent } from 'vue';
-import BaseNav from './base-nav.vue';
-export default defineComponent({
-  name: "BaseHeader",
-  components: {
-    BaseNav
-  }
-});
+<script setup>
+  import BaseNav from './base-nav.vue';
 </script>
 
 <style lang="scss">

@@ -12,10 +12,6 @@ meta:
   </router-link>
 </p>
 
-<script setup>
-  import ArticleHeader from '../../components/article-header.vue'
-</script>
-
 <article-header v-bind="frontmatter" />
 
 [Score n'co](https://scorenco.com/) is a French online platform providing up-to-date information about championships results and rankings at all competitive and amateur levels, across 10 sports. Its website and mobile app also allow users (fans and clubs) to comment and update their favorite teams' events in real time.
@@ -31,3 +27,7 @@ The ownership of the front-end development was gradually transferred to me, and 
 Other tasks I completed include an update for the company logo and visual identity, providing guidelines to ensure brand coherence; and switching the project from Angular to React while updating the build processes.
 
 --Note: the "Score n'co" brand, its design elements and contents are copyrighted by [Score n'co](https://scorenco.com/).--
+
+<script setup>
+  import ArticleHeader from '../../components/article-header.vue'
+</script>

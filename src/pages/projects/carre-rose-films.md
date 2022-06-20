@@ -12,10 +12,6 @@ meta:
   </router-link>
 </p>
 
-<script setup>
-  import ArticleHeader from '../../components/article-header.vue'
-</script>
-
 <article-header v-bind="frontmatter" />
 
 [Carré Rose Films](https://carrerosefilms.com/en/) (Pink Square Movies) is an adult cinema label based in France. It focuses on producing quality content with high standards regarding performers wellbeing, cast and practices diversity, and feminist values..
@@ -31,3 +27,7 @@ The website was designed with a mobile-first approach, focusing on legibility an
 ![Carré Rose Films posters for two movies, The Ad and Guacamole.](/assets/images/projects/carre-rose-3.jpg){height=841 width="1400"}
 
 --Note: the "Carré Rose Films" brand, its design elements and contents are copyrighted by [Carré Rose Films](https://carrerosefilms.com/en/).--
+
+<script setup>
+  import ArticleHeader from '../../components/article-header.vue'
+</script>

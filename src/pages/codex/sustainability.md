@@ -12,10 +12,6 @@ meta:
   </router-link>
 </p>
 
-<script setup>
-  import ArticleHeader from '../../components/article-header.vue'
-</script>
-
 <article-header v-bind="frontmatter" />
 
 As ecological disasters are surrounding us and climate crisis keeps getting more serious, I find myself compelled to learn about the ways humans can live in smarter, more ecologically conscious and ethical ways.
@@ -42,3 +38,7 @@ As ecological disasters are surrounding us and climate crisis keeps getting more
 - [Billyboil](https://www.billyboil.com.au), an insulated slow-cooker making optimal use of initial cooking heat.
 - [UX Collective](https://uxdesign.cc/)
 - [Creative Boom](https://www.creativeboom.com/)
+
+<script setup>
+  import ArticleHeader from '../../components/article-header.vue'
+</script>

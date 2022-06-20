@@ -12,10 +12,6 @@ meta:
   </router-link>
 </p>
 
-<script setup>
-  import ArticleHeader from '../../../components/article-header.vue'
-</script>
-
 <article-header v-bind="frontmatter" />
 
 ## Themes
@@ -36,3 +32,7 @@ Note: the photos are listed in reverse chronological order (most recent first).
 - ![](/assets/images/projects/photographie/geometries/03.jpg){height=933 width=1400 loading=lazy} {.photograph}
 - ![](/assets/images/projects/photographie/humans/04.jpg){height=1201 width=1600 loading=lazy} {.photograph}
 - ![](/assets/images/projects/photographie/animals/05.jpg){height=840 width=1600 loading=lazy} {.photograph}
+
+<script setup>
+  import ArticleHeader from '../../../components/article-header.vue'
+</script>

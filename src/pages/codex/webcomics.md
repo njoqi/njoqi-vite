@@ -12,10 +12,6 @@ meta:
   </router-link>
 </p>
 
-<script setup>
-  import ArticleHeader from '../../components/article-header.vue'
-</script>
-
 <article-header v-bind="frontmatter" />
 
 ## [Hard Lacker](https://hardlacquer.com/post/185301375229/post1x01)
@@ -42,3 +38,7 @@ meta:
 
 - Type: fantasy
 - Thoughts: Captivating tale with a beautiful style that keeps improving.
+
+<script setup>
+  import ArticleHeader from '../../components/article-header.vue'
+</script>

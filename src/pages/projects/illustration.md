@@ -12,10 +12,6 @@ meta:
   </router-link>
 </p>
 
-<script setup>
-  import ArticleHeader from '../../components/article-header.vue'
-</script>
-
 <article-header v-bind="frontmatter" />
 
 ## Original characters
@@ -25,7 +21,6 @@ meta:
 
 ![](/assets/images/projects/illustration/cantina.png){height=1147 width=1200}
 ==The Underside Cantina== is a diverse cast of creatures from other realities.
-
 
 ## Fanart
 
@@ -38,3 +33,7 @@ The original 2D platformer ==Rayman== is one of my earliest videogame memories, 
 I like many characters in ==Sonic the Hedgehog==, and its large base of fan creators can be surprisingly creative.
 
 --Characters, settings and source material from the Rayman and Sonic The Hedgehog series are owned by their respective copyright holders.--
+
+<script setup>
+  import ArticleHeader from '../../components/article-header.vue'
+</script>

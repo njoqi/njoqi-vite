@@ -12,16 +12,7 @@ meta:
   </router-link>
 </p>
 
-<script setup>
-  import ArticleHeader from '../../components/article-header.vue';
-  
-  const text = "Informations about tea, including a log of some teas I have tried. I seem to have a soft spot for earthy and grassy flavours.";
-  const customMeta = [{"name": "description", "content": text}]
-</script>
-
 <ArticleHeader name="Tea" :meta="customMeta" />
-
-
 
 ## Resources
 
@@ -66,3 +57,10 @@ meta:
 - Type: black tea
 - Leaves: shrivelled, sometimes golden, few twigs
 - Profile: smoky, sweet
+
+<script setup>
+  import ArticleHeader from '../../components/article-header.vue';
+  
+  const text = "Informations about tea, including a log of some teas I have tried. I seem to have a soft spot for earthy and grassy flavours.";
+  const customMeta = [{"name": "description", "content": text}]
+</script>

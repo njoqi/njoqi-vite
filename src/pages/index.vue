@@ -100,38 +100,38 @@
 </template>
 
 <script setup>
-import { ref, defineComponent } from 'vue';
-import { useHead } from '@vueuse/head';
+  import { ref } from 'vue';
+  import { useHead } from '@vueuse/head';
 
-const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December"
-];
-const todayTimestamp = Date.now();
-const today = new Date(todayTimestamp);
-const [todayMonth, todayDate, todayYear] = today.toLocaleDateString("en-US").split("/");
-const lastUpdated = ref(todayDate + " " + months[todayMonth - 1] + " " + todayYear);
-const description = ref("Things I want to record, display and share.");
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ];
+  const todayTimestamp = Date.now();
+  const today = new Date(todayTimestamp);
+  const [todayMonth, todayDate, todayYear] = today.toLocaleDateString("en-US").split("/");
+  const lastUpdated = ref(todayDate + " " + months[todayMonth - 1] + " " + todayYear);
+  const description = ref("Things I want to record, display and share.");
 
-useHead({
-  title: "njoqi · Projects",
-  meta: [
-    {
-      name: "description",
-      content: description,
-    }
-  ]
-});
+  useHead({
+    title: "njoqi · Projects",
+    meta: [
+      {
+        name: "description",
+        content: description,
+      }
+    ]
+  });
 </script>
 
 <style lang="scss">

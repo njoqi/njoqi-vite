@@ -9,19 +9,15 @@
     </header>
 </template>
 
-<script>
-  import { defineComponent, ref } from 'vue';
-  export default defineComponent({
-    name: "ArticleHeader",
-    props: {
+<script setup>
+  import { ref } from 'vue';
+
+  const props= defineProps({
       name: String,
       meta: Array
-    },
-    setup(props) {
-      const description = ref(
-        props.meta.filter((meta) => meta.name == "description")[0]
-      );
-      return { description };
-    }
   });
+  
+  const description = ref(
+    props.meta.filter((meta) => meta.name == "description")[0]
+  );
 </script>

@@ -10,20 +10,9 @@
   <BaseFooter />
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import BaseHeader from './components/base-header.vue';
-import BaseFooter from './components/base-footer.vue';
-import ArticleHeader from './components/article-header.vue';
-
-export default defineComponent({
-  components: {
-    BaseHeader,
-    BaseFooter
-  },
-  setup() {
-  }
-});
+<script setup lang="ts">
+  import BaseHeader from './components/base-header.vue';
+  import BaseFooter from './components/base-footer.vue';
 </script>
 
 

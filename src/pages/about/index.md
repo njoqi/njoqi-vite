@@ -6,10 +6,6 @@ meta:
     content: Information about this website and its author.
 ---
 
-<script setup>
-  import ArticleHeader from '../../components/article-header.vue'
-</script>
-
 <article-header v-bind="frontmatter" />
 
 ## Flynn Salazar
@@ -55,3 +51,7 @@ I aim to keep it accessible, have a small footprint, and a simple and user-frien
 -  low-power consumption
 - fiddling with server configuration
 - in the future, turning the Pi into a local community hosting station
+
+<script setup>
+  import ArticleHeader from '../../components/article-header.vue'
+</script>

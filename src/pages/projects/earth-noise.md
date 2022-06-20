@@ -12,10 +12,6 @@ meta:
   </router-link>
 </p>
 
-<script setup>
-  import ArticleHeader from '../../components/article-header.vue'
-</script>
-
 <article-header v-bind="frontmatter" />
 
 ## Synopsis
@@ -31,3 +27,7 @@ The story is meant to mix slice of life content with an overarching story questi
 While still not decided, I am envisioning Earth/Noise as either an illustrated novel or a piece of interactive fiction, possibly informed by point-and-click and narrative games. [VA-11 Hall-A](https://store.steampowered.com/app/447530/VA11_HallA_Cyberpunk_Bartender_Action/) is an example of what I would be interested in achieving.
 
 ![Elwan, the main character, in a work uniform.](/assets/images/projects/earth-noise-elwan.jpg){height=1537 width=1400}
+
+<script setup>
+  import ArticleHeader from '../../components/article-header.vue'
+</script>
