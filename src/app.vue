@@ -19,8 +19,7 @@ import ArticleHeader from './components/article-header.vue';
 export default defineComponent({
   components: {
     BaseHeader,
-    BaseFooter,
-    ArticleHeader
+    BaseFooter
   },
   setup() {
   }

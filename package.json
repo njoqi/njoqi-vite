@@ -1,12 +1,12 @@
 {
   "name": "njoqi-vite",
   "version": "0.1.2",
-  "description": "Personal portfolio and wiki",
+  "description": "Personal space on internet.",
   "engines": {
     "node": "16.15.x"
   },
   "license": "Unlicense",
-  "main": "server.js",
+  "main": "src/entry-server.js",
   "private": true,
   "scripts": {
     "start": "",
