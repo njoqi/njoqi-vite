@@ -187,7 +187,7 @@ useHead({
     display: block;
     padding: 0.5em;
     margin-bottom: 0.5em;
-    border: 0.175rem solid $color-text;
+    border: 0.175rem solid;
     text-align: center;
     line-height: 1;
     background: $color-secondary;

@@ -96,9 +96,9 @@ export default defineComponent({
   }
 
   .base-nav-link:hover,
-  .base-nav-link:active {
-    background-color: $color-secondary;
-    box-shadow: 0 0 0 0.02em $color-secondary;
+  .base-nav-link:focus {
+    background-color: $color-light;
+    box-shadow: 0 0 0 0.02em $color-light;
     color: $color-text;
   }
 

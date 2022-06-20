@@ -25,6 +25,11 @@
     color: $color-text-secondary;
   }
 
+  a:hover,
+  a:focus {
+    color: $color-text-secondary-dark;
+  }
+
   h1 {
     line-height: 1.2;
     font-weight: 400;

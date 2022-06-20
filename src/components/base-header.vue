@@ -59,8 +59,9 @@ export default defineComponent({
   }
 
   .base-header-link:hover,
-  .base-header-link:active {
+  .base-header-link:focus {
       border-color: $color-light;
+      color: $color-text;
   }
 
   .base-header-logo {
