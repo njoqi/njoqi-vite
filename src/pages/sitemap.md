@@ -73,6 +73,9 @@ meta:
       url: "/about",
       name: "About"
     }, {
+      url: "/about/meta",
+      name: "About / Meta"
+    }, {
       url: "/sitemap",
       name: "Sitemap"
     }
