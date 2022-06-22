@@ -29,7 +29,7 @@ I am a curious person whose interests span across:
 - 📜 writing
 - 🍜 food (mostly vegan!)
 
-When I'm not jumping around in code, words, or drawings, you can usually find me <router-link to="/codex/tea">drinking tea</router-link>, taking a stroll, growing plants and/or taking <router-link to="/projects/photographie">photos</router-link>.
+When I'm not jumping around in code, words, or drawings, you can usually find me drinking <router-link to="/codex/tea">tea</router-link>, taking a stroll, growing <router-link to="/codex/plants">plants</router-link> and/or taking <router-link to="/projects/photographie">photos</router-link>.
 
 You can chat with me by mail at ==[hello@njoqi.me](mailto:hello@njoqi.me){.mail-link}==, on Discord as ==Meryl#6559== or on Telegram as ==@mechameryl==. Please take a look at my photographic work on [Instagram](https://www.instagram.com/meryl.shoots/)!
 

@@ -16,6 +16,7 @@ meta:
 ## Logs
 
 - <router-link to="/codex/tea">Tea</router-link>
+- <router-link to="/codex/plants">Plants</router-link>
 - <router-link to="/codex/webcomics">Webcomics</router-link>
 
 <script setup>

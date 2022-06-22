@@ -64,11 +64,14 @@ meta:
       url: "/codex/sustainability",
       name: "Codex / Sustainablility"
     }, {
-      url: "/codex/webcomics",
-      name: "Codex / Webcomics"
-    }, {
       url: "/codex/tea",
       name: "Codex / Tea"
+    }, {
+      url: "/codex/plants",
+      name: "Codex / Plants"
+    }, {
+      url: "/codex/webcomics",
+      name: "Codex / Webcomics"
     }, {
       url: "/about",
       name: "About"
