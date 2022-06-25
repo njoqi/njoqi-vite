@@ -31,13 +31,12 @@ As ecological disasters are surrounding us and climate crisis keeps getting more
 - [Digital guide to low-tech](http://gauthierroussilhe.com/en/posts/convert-low-tech)
 - [Dark Ecology](https://orionmagazine.org/article/dark-ecology/)
 - [Unearthed](https://meanjin.com.au/essays/unearthed/)
+- [Permacomputing update 2021](http://viznut.fi/texts-en/permacomputing_update_2021.html)
 
 ## Tools and products
 
 - [nowlight](https://deciwatt.global/), a manual power source
 - [Billyboil](https://www.billyboil.com.au), an insulated slow-cooker making optimal use of initial cooking heat.
-- [UX Collective](https://uxdesign.cc/)
-- [Creative Boom](https://www.creativeboom.com/)
 
 <script setup>
   import ArticleHeader from '../../components/article-header.vue'
