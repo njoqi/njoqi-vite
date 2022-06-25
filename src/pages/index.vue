@@ -121,14 +121,13 @@
   const today = new Date(todayTimestamp);
   const [todayMonth, todayDate, todayYear] = today.toLocaleDateString("en-US").split("/");
   const lastUpdated = ref(todayDate + " " + months[todayMonth - 1] + " " + todayYear);
-  const description = ref("Things I want to record, display and share.");
 
   useHead({
     title: "njoqi · Projects",
     meta: [
       {
         name: "description",
-        content: description,
+        content: "Things I want to record, display and share.",
       }
     ]
   });
