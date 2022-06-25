@@ -2,7 +2,7 @@
   <nav class="text center base-return-top">
     <a href="#">Return to top ↑</a>
   </nav>
-  <footer class="base-footer" role="contentinfo">
+  <footer class="base-footer">
     <p class="base-footer-links">
       <span class="base-footer-text">
         <router-link to="/">Home</router-link> - <router-link to="/sitemap">Sitemap</router-link>
